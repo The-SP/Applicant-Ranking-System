@@ -1,4 +1,4 @@
-Category,Resume,education,skills,projects
+Category,Resume,education,skills,projects,experience
 Java Developer,"Operating Systems Windows XP, 7, 10. Tools/Packages Visual Basic 6.0, UML, Packet Tracer Web technologies Core java, Advance java, JSP, Hibernate, Spring Languages known C, C++ Databases SQL AREAS OF INTEREST â¢ Software Development â¢ Programming Academic Projects Details Diploma: Title: Banking Software Description: We used GSM technology for transaction of message for a security purpose. Environment/OS: Windows XP Technologies used frontend: visual basic 6.0 Backend: oracle 9i BE: Title: Single Sign On Description: We have created ""single sign on"" mechanism for network security. Environment/OS: Windows 7 Technologies Used Frontend: java Backend: Oracle 10g ME: Title: Text Based Graphical Password To Overcome Shoulder Surfing Attacks Description: I have created a most secure password system using Random Printing Algo. Environment/OS: Windows 10 Technologies used: Frontend: Java Backend: MySQL Company: Title: Agriculture Management System Description: Created Web application for Agriculture system and Farming. Environment/OS: Windows 10 Technologies used: Frontend: Hibernate Backend: MySQL Education Details 
 June 2015 to February 2018 ME(computers) computer Pune, Maharashtra Savitribai Phule Pune University
 June 2007 S.S.C.  Solapur, Maharashtra Maharashtra Secondary Board
@@ -14,7 +14,7 @@ Servlet- Exprience - Less than 1 year monthsCompany Details
 company - Maxgen Technologies Pvt.Ltd.
 description - 1. Working as a java developer over Hibernate technology. Developing web application using JSP servlet and hibernate.
 company - Prakshal IT academy
-description - I was working as a trainer. I have taught A+, N+ CCNA(routing and switching).",Bachelor in Computer Engineering,"C, Python, JavaScript","[{'title': 'Project X', 'description': 'Created a mobile app for social networking using Python'}, {'title': 'Project Y', 'description': 'Built a recommendation system for movie ratings using Java'}]"
+description - I was working as a trainer. I have taught A+, N+ CCNA(routing and switching).",Bachelor in Computer Engineering,"C, Python, JavaScript","[{'title': 'Project X', 'description': 'Created a mobile app for social networking using Python'}, {'title': 'Project Y', 'description': 'Built a recommendation system for movie ratings using Java'}]",5 years of experience in software development using C# and .NET framework.
 Java Developer,"Operating Systems Windows XP, 7, 10. Tools/Packages Visual Basic 6.0, UML, Packet Tracer Web technologies Core java, Advance java, JSP, Hibernate, Spring Languages known C, C++ Databases SQL AREAS OF INTEREST â¢ Software Development â¢ Programming Academic Projects Details Diploma: Title: Banking Software Description: We used GSM technology for transaction of message for a security purpose. Environment/OS: Windows XP Technologies used frontend: visual basic 6.0 Backend: oracle 9i BE: Title: Single Sign On Description: We have created ""single sign on"" mechanism for network security. Environment/OS: Windows 7 Technologies Used Frontend: java Backend: Oracle 10g ME: Title: Text Based Graphical Password To Overcome Shoulder Surfing Attacks Description: I have created a most secure password system using Random Printing Algo. Environment/OS: Windows 10 Technologies used: Frontend: Java Backend: MySQL Company: Title: Agriculture Management System Description: Created Web application for Agriculture system and Farming. Environment/OS: Windows 10 Technologies used: Frontend: Hibernate Backend: MySQL Education Details 
 June 2015 to February 2018 ME(computers) computer Pune, Maharashtra Savitribai Phule Pune University
 June 2007 S.S.C.  Solapur, Maharashtra Maharashtra Secondary Board
@@ -30,7 +30,7 @@ Servlet- Exprience - Less than 1 year monthsCompany Details
 company - Maxgen Technologies Pvt.Ltd.
 description - 1. Working as a java developer over Hibernate technology. Developing web application using JSP servlet and hibernate.
 company - Prakshal IT academy
-description - I was working as a trainer. I have taught A+, N+ CCNA(routing and switching).",Bachelor Degree in Computer Science,"Python, Java, HTML, CSS","[{'title': 'Project A', 'description': 'Developed a web application for online shopping using PHP'}, {'title': 'Project B', 'description': 'Implemented a machine learning model for sentiment analysis using Python'}]"
+description - I was working as a trainer. I have taught A+, N+ CCNA(routing and switching).",Bachelor Degree in Computer Science,"Python, Java, HTML, CSS","[{'title': 'Project A', 'description': 'Developed a web application for online shopping using PHP'}, {'title': 'Project B', 'description': 'Implemented a machine learning model for sentiment analysis using Python'}]",3 years of experience in data science and machine learning with Python and TensorFlow.
 Python Developer,"â¢ Operating Systems: Windows â¢ Others: MS Excel, MS Office, MS Power Point Key Projects Handled Project Title: fruit sorting and disease detection Client: Kranti Dynamics Team Size: 5 Education Details 
 January 2014 B.E. Electronics Mumbai, Maharashtra University of Mumbai
 Python Developer/analyst 
@@ -59,7 +59,7 @@ Technical skill set:
 â¢ Scripting: Python,
 â¢ GUI development: Tk, Java
 company - kranti dyanamics
-description - programming,scripting,developer,web scrapping",Masters in IT,"C, Python, Java, SQL, Go","[{'title': 'Project Z', 'description': 'Designed a SQL database management system for inventory tracking using Python and Java'}]"
+description - programming,scripting,developer,web scrapping",Masters in IT,"C, Python, Java, SQL, Go","[{'title': 'Project Z', 'description': 'Designed a SQL database management system for inventory tracking using Python and Java'}]",1 years of experience in project management and team leadership.
 Python Developer,"â¢ Operating Systems: Windows â¢ Others: MS Excel, MS Office, MS Power Point Key Projects Handled Project Title: fruit sorting and disease detection Client: Kranti Dynamics Team Size: 5 Education Details 
 January 2014 B.E. Electronics Mumbai, Maharashtra University of Mumbai
 Python Developer/analyst 
@@ -88,7 +88,7 @@ Technical skill set:
 â¢ Scripting: Python,
 â¢ GUI development: Tk, Java
 company - kranti dyanamics
-description - programming,scripting,developer,web scrapping",PhD in Computer Science,"C, Python, Django, Pandas","[{'title': 'Project K', 'description': 'Created job portal website using Django, Django REST, React'}]"
+description - programming,scripting,developer,web scrapping",PhD in Computer Science,"C, Python, Django, Pandas","[{'title': 'Project K', 'description': 'Created job portal website using Django, Django REST, React'}]",2 years of experience in mobile app development for Android and iOS using React Native.
 Python Developer,"â¢ Operating Systems: Windows â¢ Others: MS Excel, MS Office, MS Power Point Key Projects Handled Project Title: fruit sorting and disease detection Client: Kranti Dynamics Team Size: 5 Education Details 
 January 2014 B.E. Electronics Mumbai, Maharashtra University of Mumbai
 Python Developer/analyst 
@@ -117,4 +117,4 @@ Technical skill set:
 â¢ Scripting: Python,
 â¢ GUI development: Tk, Java
 company - kranti dyanamics
-description - programming,scripting,developer,web scrapping",Bachelor in Computer Engineering,"Python, JavaScript, ReactJS, Express, Node","[{'title': 'Project K', 'description': 'Created Sorting Visualizer using ReactJS, JavsScript'}]"
+description - programming,scripting,developer,web scrapping",Bachelor in Computer Engineering,"Python, JavaScript, ReactJS, Express, Node","[{'title': 'Project K', 'description': 'Created Sorting Visualizer using ReactJS, JavsScript'}]",4 years of experience in financial analysis and reporting using Excel and SAP.
