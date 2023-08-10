@@ -1,120 +1,578 @@
-Category,Resume,education,skills,projects,experience
-Java Developer,"Operating Systems Windows XP, 7, 10. Tools/Packages Visual Basic 6.0, UML, Packet Tracer Web technologies Core java, Advance java, JSP, Hibernate, Spring Languages known C, C++ Databases SQL AREAS OF INTEREST â¢ Software Development â¢ Programming Academic Projects Details Diploma: Title: Banking Software Description: We used GSM technology for transaction of message for a security purpose. Environment/OS: Windows XP Technologies used frontend: visual basic 6.0 Backend: oracle 9i BE: Title: Single Sign On Description: We have created ""single sign on"" mechanism for network security. Environment/OS: Windows 7 Technologies Used Frontend: java Backend: Oracle 10g ME: Title: Text Based Graphical Password To Overcome Shoulder Surfing Attacks Description: I have created a most secure password system using Random Printing Algo. Environment/OS: Windows 10 Technologies used: Frontend: Java Backend: MySQL Company: Title: Agriculture Management System Description: Created Web application for Agriculture system and Farming. Environment/OS: Windows 10 Technologies used: Frontend: Hibernate Backend: MySQL Education Details 
-June 2015 to February 2018 ME(computers) computer Pune, Maharashtra Savitribai Phule Pune University
-June 2007 S.S.C.  Solapur, Maharashtra Maharashtra Secondary Board
+Category,Resume,education,experience,skills,projects
+Python Developer,"Technical Skills / Responsibilities: â¢ Hands on Experience with Production and Maintenance of Projects. â¢ Experience in handling projects in agile methodology. â¢ Experience in handling projects in SDLC, Involved in each stage of Software Development Life Cycle. â¢ Responsible to gather requirement (Customer Interaction) and providing Estimate & solution document then as per process FS, TS, Coding, UTP, UTR, PTF, SOW submission to customer. â¢ Having strong knowledge of Debugging and Testing based on Python and AS/400. â¢ Worked as Change Controller - Responsible for promoting changes in Development to UAT and LIVE environment through Pivotal Cloud Foundry. â¢ Have good communication skills, Inter personal skills, hardworking and result oriented as an Individual and in team. Certification and Trainings: â¢ Completed Internal Python training. â¢ Completed Internal Python Web Crawling training. â¢ Completed Internal Python Web Scraping training. â¢ Completed Internal Python for Data Science training. â¢ Completed Internal MongoDB training. â¢ Completed Internal MySQL training. â¢ Completed Internal PostgreSQL training. â¢ Completed Internal DJango training. â¢ Completed Internal Angular 6, HTML, CSS training. â¢ Completed German A1 level and preparing for A2 from Goethe-Institute. â¢ Completed Internal Core Java training. â¢ Completed IBM I series AS\400 Training course at Maples Institute, Pune. â¢ Complete Internal MOVEX ERP training (Techn: AS400/RPG/RPGLE) â¢ Completed Internal M3 ERP training (Techn: Java) â¢ Completed Internal Stream serve training. â¢ Completed M3 Enterprise Collaborator (MEC) training.Education Details 
+ M.Sc. Computer Science Pune, Maharashtra Pune University
+ B.Sc. Computer Science Pune, Maharashtra Pune University
+ H.S.C.  Pune, Maharashtra Pune University
+Python RESTful API developer 
+
+Python developer - KPIT Technologies
+Skill Details 
+Flask- Exprience - Less than 1 year months
+Python- Exprience - Less than 1 year months
+Restful- Exprience - Less than 1 year months
+Rest- Exprience - Less than 1 year months
+Numpy- Exprience - Less than 1 year months
+AS/400- Exprience - 90 monthsCompany Details 
+company - KPIT Technologies
+description - since 6th July 2011 to till date:
+
+â¢ Currently working as a Python API developer having 2 years of experience in Python- MongoDB/MySQL development/support project.
+â¢ Worked as a M3 Java developer and Stream serve developer of Movex/M3 ERP for 1
+year.
+â¢ Worked as a Senior AS400 and Stream serve developer of Movex/M3 ERP for 4 years.
+
+Technical Expertise:
+â¢ Python development:
+â¢ Python - MongoDB
+â¢ Python - MySql
+â¢ Python Cache & Memoization
+â¢ Python GIT
+â¢ Python PWS (Pivotal Web Service - Cloud Foundry)
+â¢ German A1 Level
+
+â¢ M3/Movex ERP development:
+â¢ M3 Java of Movex/M3 ERP
+â¢ AS400 development of Movex/M3 ERP
+â¢ Stream Server development of Movex/M3 ERP
+â¢ Movex/M3 Standards, RPG/400, CL/400, ILE RPG, ILE CL, DB2/400, QUERY400 and SQL/400, Subfiles, Printer Files, PF ,LF
+â¢ Movex/M3 Flows, Programs & database structure, MI Programs.",Bachelor in Computer Engineering,5 years of experience in software development using C# and .NET framework.,"C, Python, JavaScript","[{'title': 'Social App', 'description': 'Developed a social networking app using Python and JavaScript'}, {'title': 'Movie Recommender', 'description': 'Built a movie recommendation system using Python'}]"
+Python Developer,"Education Details 
+June 2013 to June 2016 Diploma Computer science Pune, Maharashtra Aissms
+June 2016 BE pursuing Computer science Pune, Maharashtra Anantrao pawar college of Engineering & Research centre
+Python Developer 
+
+
+Skill Details 
+Company Details 
+company - Cybage Software Pvt. Ltd
+description - I want to work in organisation as a python developer to utilize my knowledge & To gain more knowledge with our organisation.",Bachelor Degree in Computer Science,3 years of experience in data science and machine learning with Python and TensorFlow.,"C, Python, Django, Pandas","[{'title': 'Job Portal', 'description': 'Developed a job portal website using Django and Pandas'}, {'title': 'Employee Dashboard', 'description': 'Created an employee management dashboard using Django'}]"
+Python Developer,"TECHNICAL PROFICIENCIES Platform: Ubuntu/Fedora/Cent OS/Windows Database: MySQL Languages: Python, Tensorflow, Numpy, C, C++ Education Details 
+January 2016 ME Computer Engineering Pune, Maharashtra Savitribai Phule Pune University
+January 2014 B.E Computer Engineering Pune, Maharashtra Savitribai Phule Pune University
+January 2010    RYK Science College, Maharashtra state board
+January 2008    Maharashtra state board
+Python developer 
+
+Python Developer
+Skill Details 
+C++- Exprience - 6 months
+MYSQL- Exprience - 6 months
+PYTHON- Exprience - 6 monthsCompany Details 
+company - Fresher
+description - Python programming",Masters in IT,1 year of experience in project management and team leadership.,"C, Python, Java, SQL, Go","[{'title': 'Inventory Management', 'description': 'Designed an inventory management system using Python and SQL'}]"
+Web Designing,"Technical Skills Web Technologies: Angular JS, HTML5, CSS3, SASS, Bootstrap, Jquery, Javascript. Software: Brackets, Visual Studio, Photoshop, Visual Studio Code Education Details 
+January 2015 B.E CSE Nagpur, Maharashtra G.H.Raisoni College of Engineering
+October 2009  Photography Competition Click Nagpur, Maharashtra Maharashtra State Board
+    College Magazine OCEAN
+Web Designer 
+
+Web Designer - Trust Systems and Software
+Skill Details 
+PHOTOSHOP- Exprience - 28 months
+BOOTSTRAP- Exprience - 6 months
+HTML5- Exprience - 6 months
+JAVASCRIPT- Exprience - 6 months
+CSS3- Exprience - Less than 1 year months
+Angular 4- Exprience - Less than 1 year monthsCompany Details 
+company - Trust Systems and Software
+description - Projects worked on:
+1. TrustBank-CBS
+Project Description: TrustBank-CBS is a core banking solution by Trust Systems.
+Roles and Responsibility:
+â Renovated complete UI to make it more modern, user-friendly, maintainable and optimised for bank use.
+â Shared the UI structure and guidelines to be incorporated, with development team of around 50
+members.
+â Achieved the target of project completion in given time frame.
+â Made required graphics for the project in photoshop
+
+2. Loan Bazar (Loan Appraisal)
+Project Description: Loan Bazar is a MVC-based application dedicated to creating and managing
+loan applications. The goal of this application is to streamline the process of loan application and integrate with existing CBS.
+Roles and Responsibility
+â Designed and developed modern and responsive UI of entire application and achieved the target in given time frame.
+â Made required graphics for the project in photoshop
+3. Capital Security Bond Application
+Project Description: Capital Security Bond Application is a MVC based application which provided an online platform to purchase gold bond
+Roles and Responsibility:
+â Designed and developed modern and responsive UI of entire application and achieved the target in given time frame.
+â Made required graphics for the project in photoshop
+
+4. SoftGST
+Project Description: SoftGST (Web Based Application) is an ASP application to every tax
+payers and its vendors for generating the GSTR returns on the basis of sales / purchase
+data, additionally the application can do the reconciliation of GSTR 2 A with purchase register.
+Roles and Responsibility:
+â Designed and developed the UI of Dashboard.
+
+5. Trust Analytica:
+Project Description: Trust Analytika is the mobile web app that shows bank asset, liability,
+income, expenses.
+Roles and Responsibility:
+â Designed and developed the landing page of the application.
+â Supported the developers in UI implementation
+
+6. Website's:
+Project Name:
+1. TSR Technology Services - http://tsrtechnologyservices.com
+2. Vidarbha Merchants Urban Co-Op Bank - http://vmcbank.com
+3. GISSS - http://gisss.co.in
+4. Softtrust USA - http://softtrustusa.com
+Roles and Responsibility
+â Communicated with clients to understand their requirement
+â Made mocks for the website
+â Designed and developed complete website and hosted them in stipulated time.
+company - www.jalloshband.com
+description - Project Name:
+1. Jallosh Band - www.jalloshband.com
+2. An Endeavor Foundation
+Roles and Responsibility:
+â Communicated with clients to understand their requirement
+â Made mocks for the website
+â Designed and developed complete website and hosted them in stipulated time.
+company - 10MagicalFingers
+description - National and international client interaction.
+â Management of digital data",PhD in Computer Science,2 years of experience in mobile app development for Android and iOS using React Native.,"Python, JavaScript, ReactJS, Express, Node","[{'title': 'Sorting Visualizer', 'description': 'Created a sorting visualizer using ReactJS and Node'}]"
+Web Designing,"Education Details 
+ B.C.A Bachelor Computer Application Pune, Maharashtra Pune University
+ H.S.C.  Pune, Maharashtra Pune University
+ S.S.C.  Pune, Maharashtra Pune University
+Web Designing and Developer 
+
+php Developer - Exposys Pvt. Ltd
+Skill Details 
+Company Details 
+company - Exposys Pvt. Ltd
+description - Technical Skills
+Web Development: HTML5, CSS3, Bootstrap, PHP, Ajax, Jquery, JavaScript.
+Database: MySQL.
+Development Tools: Notepad++, Sublime Text2.
+Framework: Codeigniter.
+Server: Apache tomcat, Xampp Control Panel.
+Operating Systems: Windows.
+company - Exposys Pvt. Ltd
+description - Pune.	Augest 2017 to till date
+
+Project Details:
+Project-I: Pragat Bharat System
+Technologies Used: HTML, CSS, BOOTSTRAP, PHP, JQUERY, AJAX.
+Database Used: My SQL.
+Team size: 1
+Position: Software Developer
+Synopsis: This project aim is specially design for people. It is used to collect information to diifernt sector.
+
+Project-II: Go Ayur System
+Technologies Used: HTML, CSS, BOOTSTRAP, PHP, JQUERY, AJAX.
+Database Used: My SQL.
+Team size: 2
+Position: Software Developer
+Synopsis: Go Ayurveda Panchakarma center is one of most traditionally well established, professional and innovative providers of Classical
+Ayurvedic Health services and Kerala Panchakarma therapies.
+
+Project-III: Vitsanindia System
+Technologies Used: HTML, CSS, BOOTSTRAP, PHP, JQUERY, AJAX, JAVA SCRIPT.
+Database Used: My SQL.
+Team size: 2
+Position: Software Developer
+Synopsis: Online Shooping through app. This app is user friendly because there is a option for change language. User can to find different categories products as there choice.
+
+Project-IV: MahabaleshwarTours
+Technologies Used: HTML, CSS, BOOTSTRAP, PHP, JQUERY, AJAX, JAVA SCRIPT.
+Database Used: My SQL.
+Team size: 1
+Position: Software Developer
+Synopsis: In this system is to provide Online Registration, Tour Package Information, Ticket Booking, Online Payment and Searching Facility for Customer and also Generate Different types of Report.
+
+Project-V: Cityspaceindia
+Technologies Used: HTML, CSS, BOOTSTRAP, PHP, JQUERY, AJAX, JAVA SCRIPT.
+Database Used: My SQL.
+Team size: 1
+Position: Software Developer
+Synopsis: Service provider website we provide different categories.
+
+Project-VI: Fruitsbuddy
+Technologies Used: HTML, CSS, BOOTSTRAP, PHP, JQUERY, AJAX, JAVA SCRIPT.
+Database Used: My SQL.
+Team size: 1
+Position: Software Developer
+Synopsis: Fruitbuddy is to manage the details of fruits, Customer, Order, Transaction, Payment. It manages all the information about fruits, Stocks, Payment. The project is totally built at administrative end and thus only the administrator is guaranteed the access. The purpose of the project is to build an application program to reduce the manual work for managing the fruits, Customer, Stocks, Order.
+
+Project-VII: Totalcitee
+Technologies Used: HTML, CSS, BOOTSTRAP, PHP, JQUERY, AJAX, JAVA SCRIPT.
+Database Used: My SQL.
+Team size: 1
+Position: Software Developer
+Synopsis: Real Estate web application has been created for helping you to sell properties through web based user interface. Visitors on your website can view particular desired products using search engine facility.
+
+Project-VIII: Golchha
+Technologies Used: HTML, CSS, BOOTSTRAP, PHP, JQUERY, AJAX, JAVA SCRIPT.
+Database Used: My SQL.
+Team size: 1
+Position: Software Developer
+Synopsis: Service provider website we provide different categories.",Bachelor in Computer Engineering,4 years of experience in financial analysis and reporting using Excel and SAP.,"JavaScript, Angular, TypeScript","[{'title': 'Task Management', 'description': 'Developed a task management app using Angular and TypeScript'}]"
+Web Designing,"Technical Skills Web Technologies: Angular JS, HTML5, CSS3, SASS, Bootstrap, Jquery, Javascript. Software: Brackets, Visual Studio, Photoshop, Visual Studio Code Education Details 
+January 2015 B.E CSE Nagpur, Maharashtra G.H.Raisoni College of Engineering
+October 2009  Photography Competition Click Nagpur, Maharashtra Maharashtra State Board
+    College Magazine OCEAN
+Web Designer 
+
+Web Designer - Trust Systems and Software
+Skill Details 
+PHOTOSHOP- Exprience - 28 months
+BOOTSTRAP- Exprience - 6 months
+HTML5- Exprience - 6 months
+JAVASCRIPT- Exprience - 6 months
+CSS3- Exprience - Less than 1 year months
+Angular 4- Exprience - Less than 1 year monthsCompany Details 
+company - Trust Systems and Software
+description - Projects worked on:
+1. TrustBank-CBS
+Project Description: TrustBank-CBS is a core banking solution by Trust Systems.
+Roles and Responsibility:
+â Renovated complete UI to make it more modern, user-friendly, maintainable and optimised for bank use.
+â Shared the UI structure and guidelines to be incorporated, with development team of around 50
+members.
+â Achieved the target of project completion in given time frame.
+â Made required graphics for the project in photoshop
+
+2. Loan Bazar (Loan Appraisal)
+Project Description: Loan Bazar is a MVC-based application dedicated to creating and managing
+loan applications. The goal of this application is to streamline the process of loan application and integrate with existing CBS.
+Roles and Responsibility
+â Designed and developed modern and responsive UI of entire application and achieved the target in given time frame.
+â Made required graphics for the project in photoshop
+3. Capital Security Bond Application
+Project Description: Capital Security Bond Application is a MVC based application which provided an online platform to purchase gold bond
+Roles and Responsibility:
+â Designed and developed modern and responsive UI of entire application and achieved the target in given time frame.
+â Made required graphics for the project in photoshop
+
+4. SoftGST
+Project Description: SoftGST (Web Based Application) is an ASP application to every tax
+payers and its vendors for generating the GSTR returns on the basis of sales / purchase
+data, additionally the application can do the reconciliation of GSTR 2 A with purchase register.
+Roles and Responsibility:
+â Designed and developed the UI of Dashboard.
+
+5. Trust Analytica:
+Project Description: Trust Analytika is the mobile web app that shows bank asset, liability,
+income, expenses.
+Roles and Responsibility:
+â Designed and developed the landing page of the application.
+â Supported the developers in UI implementation
+
+6. Website's:
+Project Name:
+1. TSR Technology Services - http://tsrtechnologyservices.com
+2. Vidarbha Merchants Urban Co-Op Bank - http://vmcbank.com
+3. GISSS - http://gisss.co.in
+4. Softtrust USA - http://softtrustusa.com
+Roles and Responsibility
+â Communicated with clients to understand their requirement
+â Made mocks for the website
+â Designed and developed complete website and hosted them in stipulated time.
+company - www.jalloshband.com
+description - Project Name:
+1. Jallosh Band - www.jalloshband.com
+2. An Endeavor Foundation
+Roles and Responsibility:
+â Communicated with clients to understand their requirement
+â Made mocks for the website
+â Designed and developed complete website and hosted them in stipulated time.
+company - 10MagicalFingers
+description - National and international client interaction.
+â Management of digital data",Masters in Computer Science,6 years of experience in web development using PHP and MySQL.,"HTML, CSS, jQuery","[{'title': 'Personal Website', 'description': 'Created a personal website using HTML, CSS, and jQuery'}, {'title': 'Portfolio Site', 'description': 'Designed an online portfolio showcasing various projects'}]"
+Web Designing,"Education Details 
+January 2016 B.Sc. Information Technology Mumbai, Maharashtra University of Mumbai
+January 2012 HSC  Allahabad, Uttar Pradesh Allahabad university
+January 2010 SSC dot Net Allahabad, Uttar Pradesh Allahabad university
+Web designer and Developer Trainer 
+
+Web designer and Developer
+Skill Details 
+Web design- Exprience - 12 months
+Php- Exprience - 12 monthsCompany Details 
+company - NetTech India
+description - Working. ( salary - 12k)
+PERSONAL INTEREST
+
+Listening to Music, Surfing net, Watching Movie, Playing Cricket.
+company - EPI Center Academy
+description - Working.  ( Salary Contract based)
+company - Aptech Charni Road
+description - Salary Contract based)",Bachelor in Software Engineering,2 years of experience in cloud computing and DevOps with AWS and Docker.,"Python, Java, HTML, CSS","[{'title': 'E-commerce Website', 'description': 'Created an online shopping platform using Java and HTML/CSS'}, {'title': 'Sentiment Analysis', 'description': 'Implemented sentiment analysis using Python and Java'}]"
+Data Science,"Skills * Programming Languages: Python (pandas, numpy, scipy, scikit-learn, matplotlib), Sql, Java, JavaScript/JQuery. * Machine learning: Regression, SVM, NaÃ¯ve Bayes, KNN, Random Forest, Decision Trees, Boosting techniques, Cluster Analysis, Word Embedding, Sentiment Analysis, Natural Language processing, Dimensionality reduction, Topic Modelling (LDA, NMF), PCA & Neural Nets. * Database Visualizations: Mysql, SqlServer, Cassandra, Hbase, ElasticSearch D3.js, DC.js, Plotly, kibana, matplotlib, ggplot, Tableau. * Others: Regular Expression, HTML, CSS, Angular 6, Logstash, Kafka, Python Flask, Git, Docker, computer vision - Open CV and understanding of Deep learning.Education Details 
+
+Data Science Assurance Associate 
+
+Data Science Assurance Associate - Ernst & Young LLP
+Skill Details 
+JAVASCRIPT- Exprience - 24 months
+jQuery- Exprience - 24 months
+Python- Exprience - 24 monthsCompany Details 
+company - Ernst & Young LLP
+description - Fraud Investigations and Dispute Services   Assurance
+TECHNOLOGY ASSISTED REVIEW
+TAR (Technology Assisted Review) assists in accelerating the review process and run analytics and generate reports.
+* Core member of a team helped in developing automated review platform tool from scratch for assisting E discovery domain, this tool implements predictive coding and topic modelling by automating reviews, resulting in reduced labor costs and time spent during the lawyers review.
+* Understand the end to end flow of the solution, doing research and development for classification models, predictive analysis and mining of the information present in text data. Worked on analyzing the outputs and precision monitoring for the entire tool.
+* TAR assists in predictive coding, topic modelling from the evidence by following EY standards. Developed the classifier models in order to identify ""red flags"" and fraud-related issues.
+
+Tools & Technologies: Python, scikit-learn, tfidf, word2vec, doc2vec, cosine similarity, NaÃ¯ve Bayes, LDA, NMF for topic modelling, Vader and text blob for sentiment analysis. Matplot lib, Tableau dashboard for reporting.
+
+MULTIPLE DATA SCIENCE AND ANALYTIC PROJECTS (USA CLIENTS)
+TEXT ANALYTICS - MOTOR VEHICLE CUSTOMER REVIEW DATA * Received customer feedback survey data for past one year. Performed sentiment (Positive, Negative & Neutral) and time series analysis on customer comments across all 4 categories.
+* Created heat map of terms by survey category based on frequency of words * Extracted Positive and Negative words across all the Survey categories and plotted Word cloud.
+* Created customized tableau dashboards for effective reporting and visualizations.
+CHATBOT * Developed a user friendly chatbot for one of our Products which handle simple questions about hours of operation, reservation options and so on.
+* This chat bot serves entire product related questions. Giving overview of tool via QA platform and also give recommendation responses so that user question to build chain of relevant answer.
+* This too has intelligence to build the pipeline of questions as per user requirement and asks the relevant /recommended questions.
+
+Tools & Technologies: Python, Natural language processing, NLTK, spacy, topic modelling, Sentiment analysis, Word Embedding, scikit-learn, JavaScript/JQuery, SqlServer
+
+INFORMATION GOVERNANCE
+Organizations to make informed decisions about all of the information they store. The integrated Information Governance portfolio synthesizes intelligence across unstructured data sources and facilitates action to ensure organizations are best positioned to counter information risk.
+* Scan data from multiple sources of formats and parse different file formats, extract Meta data information, push results for indexing elastic search and created customized, interactive dashboards using kibana.
+* Preforming ROT Analysis on the data which give information of data which helps identify content that is either Redundant, Outdated, or Trivial.
+* Preforming full-text search analysis on elastic search with predefined methods which can tag as (PII) personally identifiable information (social security numbers, addresses, names, etc.) which frequently targeted during cyber-attacks.
+Tools & Technologies: Python, Flask, Elastic Search, Kibana
+
+FRAUD ANALYTIC PLATFORM
+Fraud Analytics and investigative platform to review all red flag cases.
+â¢ FAP is a Fraud Analytics and investigative platform with inbuilt case manager and suite of Analytics for various ERP systems.
+* It can be used by clients to interrogate their Accounting systems for identifying the anomalies which can be indicators of fraud by running advanced analytics
+Tools & Technologies: HTML, JavaScript, SqlServer, JQuery, CSS, Bootstrap, Node.js, D3.js, DC.js",Masters in Data Science,"3 years of experience in front-end development using HTML, CSS, and JavaScript.","Java, C++, Ruby, PHP","[{'title': 'Online Forum', 'description': 'Built an online forum platform using Java and PHP'}, {'title': 'Blog Platform', 'description': 'Developed a blog platform using Ruby on Rails and PostgreSQL'}]"
+Data Science,"Education Details 
+May 2013 to May 2017 B.E   UIT-RGPV
+Data Scientist 
+
+Data Scientist - Matelabs
+Skill Details 
+Python- Exprience - Less than 1 year months
+Statsmodels- Exprience - 12 months
+AWS- Exprience - Less than 1 year months
+Machine learning- Exprience - Less than 1 year months
+Sklearn- Exprience - Less than 1 year months
+Scipy- Exprience - Less than 1 year months
+Keras- Exprience - Less than 1 year monthsCompany Details 
+company - Matelabs
+description - ML Platform for business professionals, dummies and enthusiasts.
+60/A Koramangala 5th block,
+Achievements/Tasks behind sukh sagar, Bengaluru,
+India                               Developed and deployed auto preprocessing steps of machine learning mainly missing value
+treatment, outlier detection, encoding, scaling, feature selection and dimensionality reduction.
+Deployed automated classification and regression model.
+linkedin.com/in/aditya-rathore-
+b4600b146                           Reasearch and deployed the time series forecasting model ARIMA, SARIMAX, Holt-winter and
+Prophet.
+Worked on meta-feature extracting problem.
+github.com/rathorology
+Implemented a state of the art research paper on outlier detection for mixed attributes.
+company - Matelabs
+description - ",Bachelor in Information Technology,7 years of experience in software testing and quality assurance.,"C#, .NET, ASP.NET","[{'title': 'Online Store', 'description': 'Developed an online store using C# and ASP.NET'}]"
+Data Science,"Areas of Interest Deep Learning, Control System Design, Programming in-Python, Electric Machinery, Web Development, Analytics Technical Activities q Hindustan Aeronautics Limited, Bangalore - For 4 weeks under the guidance of Mr. Satish, Senior Engineer in the hangar of Mirage 2000 fighter aircraft Technical Skills Programming Matlab, Python and Java, LabView, Python WebFrameWork-Django, Flask, LTSPICE-intermediate Languages and and MIPOWER-intermediate, Github (GitBash), Jupyter Notebook, Xampp, MySQL-Basics, Python Software Packages Interpreters-Anaconda, Python2, Python3, Pycharm, Java IDE-Eclipse Operating Systems Windows, Ubuntu, Debian-Kali Linux Education Details 
+January 2019 B.Tech. Electrical and Electronics Engineering  Manipal Institute of Technology
+January 2015    DEEKSHA CENTER
+January 2013    Little Flower Public School
+August 2000    Manipal Academy of Higher
+DATA SCIENCE 
+
+DATA SCIENCE AND ELECTRICAL ENTHUSIAST
+Skill Details 
+Data Analysis- Exprience - Less than 1 year months
+excel- Exprience - Less than 1 year months
+Machine Learning- Exprience - Less than 1 year months
+mathematics- Exprience - Less than 1 year months
+Python- Exprience - Less than 1 year months
+Matlab- Exprience - Less than 1 year months
+Electrical Engineering- Exprience - Less than 1 year months
+Sql- Exprience - Less than 1 year monthsCompany Details 
+company - THEMATHCOMPANY
+description - I am currently working with a Casino based operator(name not to be disclosed) in Macau.I need to segment the customers who visit their property based on the value the patrons bring into the company.Basically prove that the segmentation can be done in much better way than the current system which they have with proper numbers to back it up.Henceforth they can implement target marketing strategy to attract their customers who add value to the business.",Masters in Computer Engineering,5 years of experience in network administration and security.,"Python, R, SQL, Tableau","[{'title': 'Data Analysis', 'description': 'Conducted data analysis using Python and SQL, and visualized results with Tableau'}]"
+Data Science,"Skills â¢ R â¢ Python â¢ SAP HANA â¢ Tableau â¢ SAP HANA SQL â¢ SAP HANA PAL â¢ MS SQL â¢ SAP Lumira â¢ C# â¢ Linear Programming â¢ Data Modelling â¢ Advance Analytics â¢ SCM Analytics â¢ Retail Analytics â¢Social Media Analytics â¢ NLP Education Details 
+January 2017 to January 2018 PGDM Business Analytics  Great Lakes Institute of Management & Illinois Institute of Technology
+January 2013 Bachelor of Engineering Electronics and Communication Bengaluru, Karnataka New Horizon College of Engineering, Bangalore Visvesvaraya Technological University
+Data Science Consultant 
+
+Consultant - Deloitte USI
+Skill Details 
+LINEAR PROGRAMMING- Exprience - 6 months
+RETAIL- Exprience - 6 months
+RETAIL MARKETING- Exprience - 6 months
+SCM- Exprience - 6 months
+SQL- Exprience - Less than 1 year months
+Deep Learning- Exprience - Less than 1 year months
+Machine learning- Exprience - Less than 1 year months
+Python- Exprience - Less than 1 year months
+R- Exprience - Less than 1 year monthsCompany Details 
+company - Deloitte USI
+description - The project involved analysing historic deals and coming with insights to optimize future deals.
+Role: Was given raw data, carried out end to end analysis and presented insights to client.
+Key Responsibilities:
+â¢ Extract data from client systems across geographies.
+â¢ Understand and build reports in tableau. Infer meaningful insights to optimize prices and find out process blockades.
+Technical Environment: R, Tableau.
+
+Industry: Cross Industry
+Service Area: Cross Industry - Products
+Project Name: Handwriting recognition
+Consultant: 3 months.
+The project involved taking handwritten images and converting them to digital text images by object detection and sentence creation.
+Role: I was developing sentence correction functionality.
+Key Responsibilities:
+â¢ Gather data large enough to capture all English words
+â¢ Train LSTM models on words.
+Technical Environment: Python.
+
+Industry: Finance
+Service Area: Financial Services - BI development Project Name: SWIFT
+Consultant: 8 months.
+The project was to develop an analytics infrastructure on top of SAP S/4, it would user to view
+financial reports to respective departments. Reporting also included forecasting expenses.
+Role: I was leading the offshore team.
+Key Responsibilities:
+â¢ Design & Develop data models for reporting.
+â¢ Develop ETL for data flow
+â¢ Validate various reports.
+Technical Environment: SAP HANA, Tableau, SAP AO.
+
+Industry: Healthcare Analytics
+Service Area: Life Sciences - Product development Project Name: Clinical Healthcare System
+Consultant: 2 months.
+The project was to develop an analytics infrastructure on top of Argus, it would allow users to query faster and provide advance analytics capabilities.
+Role: I was involved from design to deploy phase, performed a lot of data restructuring and built
+models for insights.
+Key Responsibilities:
+â¢ Design & Develop data models for reporting.
+â¢ Develop and deploy analytical models.
+â¢ Validate various reports.
+Technical Environment: Data Modelling, SAP HANA, Tableau, NLP.
+
+Industry: FMCG
+Service Area: Trade & Promotion
+Project Name: Consumption Based Planning for Flowers Foods Consultant; 8 months.
+The project involved setting up of CRM and CBP modules.
+Role: I was involved in key data decomposition activities and setting up the base for future year
+forecast. Over the course of the project I developed various models and carried out key
+performance improvements.
+Key Responsibilities:
+â¢ Design & Develop HANA models for decomposition.
+â¢ Develop data flow for forecast.
+â¢ Developed various views for reporting of Customer/Sales/Funds.
+â¢ Validate various reports in BOBJ.
+Technical Environment: Data Modelling, SAP HANA, BOBJ, Time Series Forecasting.
+
+Internal Initiative Industry: FMCG
+Customer Segmentation and RFM analysis Consultant; 3 months.
+The initiative involved setting up of HANA-Python interface and advance analytics on Python. Over the course I had successfully segmented data into five core segments using K-means and carried out RFM analysis in Python. Also developed algorithm to categorize any new customer under the defined buckets.
+Technical Environment: Anaconda3, Python3.6, HANA SPS12
+
+Industry: Telecom Invoice state detection Consultant; 1 months.
+The initiative was to reduce the manual effort in verifying closed and open invoices manually, it
+involved development to a decision tree to classify open/closed invoices. This enabled effort
+reduction by 60%.
+Technical Environment: R, SAP PAL, SAP HANA SPS12
+
+Accenture Experience
+Industry: Analytics - Cross Industry
+In Process Analytics for SAP Senior Developer; 19 months.
+Accenture Solutions Pvt. Ltd., India
+The project involved development of SAP analytics tool - In Process Analytics (IPA) . My role was to develop database objects and data models to provide operational insights to clients.
+Role: I have developed various Finance related KPIs and spearheaded various deployments.
+Introduced SAP Predictive analytics to reduce development time and reuse functionalities for KPIs and prepared production planning reports.
+Key Responsibilities:
+â¢ Involved in information gather phase.
+â¢ Designed and implemented SAP HANA data modelling using Attribute View, Analytic View, and
+Calculation View.
+â¢ Developed various KPI's individually using complex SQL scripts in Calculation views.
+â¢ Created procedures in HANA Database.
+â¢ Took ownership and developed Dashboard functionality.
+â¢ Involved in building data processing algorithms to be executed in R server for cluster analysis.
+Technical Environment: R, SAP HANA, T-SQL.
+Industry: Cross Industry
+Accenture Testing Accelerator for SAP Database Developer; 21 months.
+Accenture Solutions Pvt. Ltd., India
+Role: I have taken care of all development activities for the ATAS tool and have also completed
+various deployments of the product.
+Apart from these activities I was also actively involved in maintenance of the database servers
+(Production & Quality)
+Key Responsibilities:
+â¢ Analyzing business requirements, understanding the scope, getting requirements clarified
+interacting with business and further transform all requirements to generate attribute
+mapping documents and reviewing mapping specification documentation
+â¢ Create / Update database objects like tables, views, stored procedures, function, and packages
+â¢ Monitored SQL Server Error Logs and Application Logs through SQL Server Agent
+â¢ Prepared Data Flow Diagrams, Entity Relationship Diagrams using UML
+â¢ Responsible for Designing, developing and Normalization of database tables
+â¢ Experience in performance tuning using SQL profiler.
+â¢ Involved in QA, UAT, knowledge transfer and support activities
+Technical Environment: SQL Server 2008/2014, Visual Studio 2010, Windows Server, Performance
+Monitor, SQL Server Profiler, C#, PL-SQL, T-SQL.",Bachelor in Electrical Engineering,8 years of experience in technical support and helpdesk management.,"Python, TensorFlow, Keras","[{'title': 'Image Recognition', 'description': 'Implemented image recognition using Python, TensorFlow, and Keras'}]"
+Data Science,"Education Details 
+ MCA   YMCAUST,  Faridabad,  Haryana
+Data Science internship 
+
+
+Skill Details 
+Data Structure- Exprience - Less than 1 year months
+C- Exprience - Less than 1 year months
+Data Analysis- Exprience - Less than 1 year months
+Python- Exprience - Less than 1 year months
+Core Java- Exprience - Less than 1 year months
+Database Management- Exprience - Less than 1 year monthsCompany Details 
+company - Itechpower
+description - ",Masters in Business Administration,4 years of experience in UX/UI design for web and mobile applications.,"R, SQL, Tableau","[{'title': 'Sales Analysis', 'description': 'Performed sales analysis using R, SQL, and created visualizations with Tableau'}]"
+Data Science,"SKILLS C Basics, IOT, Python, MATLAB, Data Science, Machine Learning, HTML, Microsoft Word, Microsoft Excel, Microsoft Powerpoint. RECOGNITION Academic Secured First place in B.Tech.Education Details 
+August 2014 to May 2018 B.Tech.  Ghatkesar, Andhra Pradesh Aurora's Scientific and Technological Institute
+June 2012 to May 2014  Secondary Education Warangal, Telangana SR Junior College
+Data Science 
+
+
+Skill Details 
+MS OFFICE- Exprience - Less than 1 year months
+C- Exprience - Less than 1 year months
+machine learning- Exprience - Less than 1 year months
+data science- Exprience - Less than 1 year months
+Matlab- Exprience - Less than 1 year monthsCompany Details 
+company - 
+description - ",Bachelor in Mathematics,9 years of experience in software architecture and system design.,"Python, Pandas, Scikit-Learn","[{'title': 'Predictive Modeling', 'description': 'Developed predictive models using Python, Pandas, and Scikit-Learn'}]"
+Java Developer,"Education Details 
+August 2010 to May 2017 BE Electronics & Communication Jabalpur, Madhya Pradesh Takshshila institute of technology
+Java developer 
+
+
+Skill Details 
+Java, Javascript,- Exprience - 6 monthsCompany Details 
+company - Wab It Softwere Pvt.  Ltd.
+description - Jr. Java Developer",Masters in Software Engineering,3 years of experience in e-commerce platform development using Magento.,"Python, NLP, NLTK","[{'title': 'Text Classification', 'description': 'Built a text classification system using Python and NLTK'}]"
+Java Developer,"Technical Skills (Trained / Project Acquired Skills) â¢ Languages Known: C, C++, J2EE, Spring, Hibernate. â¢ Testing: Functional Testing, Manual Testing. â¢ Operating Systems: Windows & Linux. â¢ Packages: MS-office. â¢ Databases: My SQL & PostgreSQL.Education Details 
+January 2013 to January 2017 B.E Computer Science and Engineering  RTMNU University - Jhulelal Institute of Technology
+January 2011 to January 2013 HSC  Nagpur, Maharashtra Maharashtra State Board - Dayanand Arya Kanya Junior College
+January 2010 to January 2011 SSC  Nagpur, Maharashtra Maharashtra State Board
 Java Developer 
 
-Java Developer
+Java Developer - Inouvelle Ventures Private Limited
 Skill Details 
-JAVA- Exprience - 6 months
+J2EE- Exprience - 17 months
+C++- Exprience - 6 months
 DATABASES- Exprience - 6 months
-Hibernate- Exprience - Less than 1 year months
-Jsp- Exprience - Less than 1 year months
-Servlet- Exprience - Less than 1 year monthsCompany Details 
-company - Maxgen Technologies Pvt.Ltd.
-description - 1. Working as a java developer over Hibernate technology. Developing web application using JSP servlet and hibernate.
-company - Prakshal IT academy
-description - I was working as a trainer. I have taught A+, N+ CCNA(routing and switching).",Bachelor in Computer Engineering,"C, Python, JavaScript","[{'title': 'Project X', 'description': 'Created a mobile app for social networking using Python'}, {'title': 'Project Y', 'description': 'Built a recommendation system for movie ratings using Java'}]",5 years of experience in software development using C# and .NET framework.
-Java Developer,"Operating Systems Windows XP, 7, 10. Tools/Packages Visual Basic 6.0, UML, Packet Tracer Web technologies Core java, Advance java, JSP, Hibernate, Spring Languages known C, C++ Databases SQL AREAS OF INTEREST â¢ Software Development â¢ Programming Academic Projects Details Diploma: Title: Banking Software Description: We used GSM technology for transaction of message for a security purpose. Environment/OS: Windows XP Technologies used frontend: visual basic 6.0 Backend: oracle 9i BE: Title: Single Sign On Description: We have created ""single sign on"" mechanism for network security. Environment/OS: Windows 7 Technologies Used Frontend: java Backend: Oracle 10g ME: Title: Text Based Graphical Password To Overcome Shoulder Surfing Attacks Description: I have created a most secure password system using Random Printing Algo. Environment/OS: Windows 10 Technologies used: Frontend: Java Backend: MySQL Company: Title: Agriculture Management System Description: Created Web application for Agriculture system and Farming. Environment/OS: Windows 10 Technologies used: Frontend: Hibernate Backend: MySQL Education Details 
-June 2015 to February 2018 ME(computers) computer Pune, Maharashtra Savitribai Phule Pune University
-June 2007 S.S.C.  Solapur, Maharashtra Maharashtra Secondary Board
-Java Developer 
-
-Java Developer
-Skill Details 
-JAVA- Exprience - 6 months
-DATABASES- Exprience - 6 months
-Hibernate- Exprience - Less than 1 year months
-Jsp- Exprience - Less than 1 year months
-Servlet- Exprience - Less than 1 year monthsCompany Details 
-company - Maxgen Technologies Pvt.Ltd.
-description - 1. Working as a java developer over Hibernate technology. Developing web application using JSP servlet and hibernate.
-company - Prakshal IT academy
-description - I was working as a trainer. I have taught A+, N+ CCNA(routing and switching).",Bachelor Degree in Computer Science,"Python, Java, HTML, CSS","[{'title': 'Project A', 'description': 'Developed a web application for online shopping using PHP'}, {'title': 'Project B', 'description': 'Implemented a machine learning model for sentiment analysis using Python'}]",3 years of experience in data science and machine learning with Python and TensorFlow.
-Python Developer,"â¢ Operating Systems: Windows â¢ Others: MS Excel, MS Office, MS Power Point Key Projects Handled Project Title: fruit sorting and disease detection Client: Kranti Dynamics Team Size: 5 Education Details 
-January 2014 B.E. Electronics Mumbai, Maharashtra University of Mumbai
-Python Developer/analyst 
-
-python developer and data analyst
-Skill Details 
-python scripting,programming,developing- Exprience - 12 months
-frontend  ,html- Exprience - 12 months
-python liabrary, numpy,pandas,matplolib,requests,beautiful soap- Exprience - 12 months
-mysql- Exprience - 12 months
-django- Exprience - 12 months
-web scrapping- Exprience - Less than 1 year monthsCompany Details 
-company - Ace The Power of 5
-description - The Accountabilities:
-
-â Understanding the functional requirements of the application given by the client.
-
-â Participated in walkthroughs of business requirements, functional requirements and technical design to ensure their testability.
-
-â Responsible for Software Configuration Management of project deliverables.
-
-Technical skill set:
-
-â¢ Languages: C, C ++, Java, python,python liabray,mysql,django,html
-
-â¢ Scripting: Python,
-â¢ GUI development: Tk, Java
-company - kranti dyanamics
-description - programming,scripting,developer,web scrapping",Masters in IT,"C, Python, Java, SQL, Go","[{'title': 'Project Z', 'description': 'Designed a SQL database management system for inventory tracking using Python and Java'}]",1 years of experience in project management and team leadership.
-Python Developer,"â¢ Operating Systems: Windows â¢ Others: MS Excel, MS Office, MS Power Point Key Projects Handled Project Title: fruit sorting and disease detection Client: Kranti Dynamics Team Size: 5 Education Details 
-January 2014 B.E. Electronics Mumbai, Maharashtra University of Mumbai
-Python Developer/analyst 
-
-python developer and data analyst
-Skill Details 
-python scripting,programming,developing- Exprience - 12 months
-frontend  ,html- Exprience - 12 months
-python liabrary, numpy,pandas,matplolib,requests,beautiful soap- Exprience - 12 months
-mysql- Exprience - 12 months
-django- Exprience - 12 months
-web scrapping- Exprience - Less than 1 year monthsCompany Details 
-company - Ace The Power of 5
-description - The Accountabilities:
-
-â Understanding the functional requirements of the application given by the client.
-
-â Participated in walkthroughs of business requirements, functional requirements and technical design to ensure their testability.
-
-â Responsible for Software Configuration Management of project deliverables.
-
-Technical skill set:
-
-â¢ Languages: C, C ++, Java, python,python liabray,mysql,django,html
-
-â¢ Scripting: Python,
-â¢ GUI development: Tk, Java
-company - kranti dyanamics
-description - programming,scripting,developer,web scrapping",PhD in Computer Science,"C, Python, Django, Pandas","[{'title': 'Project K', 'description': 'Created job portal website using Django, Django REST, React'}]",2 years of experience in mobile app development for Android and iOS using React Native.
-Python Developer,"â¢ Operating Systems: Windows â¢ Others: MS Excel, MS Office, MS Power Point Key Projects Handled Project Title: fruit sorting and disease detection Client: Kranti Dynamics Team Size: 5 Education Details 
-January 2014 B.E. Electronics Mumbai, Maharashtra University of Mumbai
-Python Developer/analyst 
-
-python developer and data analyst
-Skill Details 
-python scripting,programming,developing- Exprience - 12 months
-frontend  ,html- Exprience - 12 months
-python liabrary, numpy,pandas,matplolib,requests,beautiful soap- Exprience - 12 months
-mysql- Exprience - 12 months
-django- Exprience - 12 months
-web scrapping- Exprience - Less than 1 year monthsCompany Details 
-company - Ace The Power of 5
-description - The Accountabilities:
-
-â Understanding the functional requirements of the application given by the client.
-
-â Participated in walkthroughs of business requirements, functional requirements and technical design to ensure their testability.
-
-â Responsible for Software Configuration Management of project deliverables.
-
-Technical skill set:
-
-â¢ Languages: C, C ++, Java, python,python liabray,mysql,django,html
-
-â¢ Scripting: Python,
-â¢ GUI development: Tk, Java
-company - kranti dyanamics
-description - programming,scripting,developer,web scrapping",Bachelor in Computer Engineering,"Python, JavaScript, ReactJS, Express, Node","[{'title': 'Project K', 'description': 'Created Sorting Visualizer using ReactJS, JavsScript'}]",4 years of experience in financial analysis and reporting using Excel and SAP.
+FUNCTIONAL TESTING- Exprience - 6 months
+LINUX- Exprience - 6 monthsCompany Details 
+company - Inouvelle Ventures Private Limited
+description - Nagpur.
+1.   Project name: Stock Management System		December 2017 - Till Date
+Language of implementation: Angular (Frontend), JAVA - J2EE, spring, Hibernate Framework (Backend)
+& PostgresSql Database.
+Role: Java Developer
+Operating system: Windows XP/07/08
+Description: Stock management System is Specially Developing for the Medicinal Market. This software is developing to keep the track of medicines, ailments, surgical Equipments, & also to keep the track of Wholesalers, Retailers, Employees, & Customers of the Company. Stock management system is the practice of ordering, storing, tracking, and controlling
+inventory. Debtor invoicing software helps small businesses and freelancers keep track of company assets   .. Stock
+management may also be called stock control, inventory management or inventory control.
+company - Inouvelle Ventures Private Limited
+description - Project Profile
+company - Inouvelle Ventures Private Limited
+description - Language of implementation: Angular (Frontend), JAVA - J2EE, spring, Hibernate Framework (Backend)
+& PostgresSql Database.
+Role: Java Developer, Manual Testing.
+Operating system: Windows XP/07/08
+Description: This Project is done for the Oldest Printing Press in Nagpur. The proposed web based Printing Press
+Management System designed according to user and system requirement to fulfil the existing problems. This system offers the products and services that enhance organization growth, efficiency, and profitability.",Bachelor in Physics,10 years of experience in database administration and optimization.,"Python, Spark, Hadoop","[{'title': 'Big Data Analysis', 'description': 'Conducted big data analysis using Python, Spark, and Hadoop'}]"
