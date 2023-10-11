@@ -45,11 +45,6 @@ def map_sections(sections, keywords_section):
                 new_sections[new_section] += text
     return new_sections
 
-def extract_and_map_sections(pdf_path, keywords, keywords_section):
-    sections = extract_sections_from_pdf(pdf_path, keywords)
-    new_sections = map_sections(sections, keywords_section)
-    return new_sections
-
 
 # Define a list of common resume section titles
 keywords = [
@@ -103,6 +98,8 @@ for filename in resume_files:
 print("Writing data to CSV...")
 # Convert the list of dictionaries to a DataFrame
 df = pd.DataFrame(resumes)
+# Fill NaN values with empty strings
+df = df.fillna('')
 # Write the DataFrame to a CSV file
 df.to_csv('resume_sections.csv', index=False)
 print("Finished writing data to CSV.")
