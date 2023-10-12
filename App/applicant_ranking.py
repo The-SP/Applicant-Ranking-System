@@ -1,6 +1,5 @@
 import pandas as pd
 
-from resume_parse import parse_resume_files
 from description_score import get_description_score
 from skill_score import get_skills_score, get_projects_score
 from education_score import get_education_score
@@ -8,12 +7,12 @@ from experience_score import get_experience_score
 from total_score import calculate_total_score, visualize_heatmap
 
 
-def main():
-    df_jobs = pd.read_csv("jobs.csv")
-    target_job = df_jobs.loc[2]
+def ranking_algorithm(target_job):
+    # df_jobs = pd.read_csv("jobs.csv")
+    # target_job = df_jobs.loc[2]
 
-    print("RESUME PARSING...")
-    parse_resume_files()
+    # print("RESUME PARSING...")
+    # parse_resume_files()
 
     df_resume = pd.read_csv("resume_sections.csv")
     df_resume.fillna("", inplace=True)
@@ -62,9 +61,5 @@ def main():
             ]
         ]
     )
-
+    return df_resume_rankings_sorted
     # visualize_heatmap(df_resume)
-
-
-if __name__ == "__main__":
-    main()

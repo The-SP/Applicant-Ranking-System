@@ -1,11 +1,11 @@
-import os
+import io
 import fitz
 import pandas as pd
 
 
-def extract_sections_from_pdf(pdf_path, keywords):
-    # Open the PDF file
-    doc = fitz.open(pdf_path)
+def extract_sections_from_pdf(readable_file, keywords):
+    # Open the PDF with fitz
+    doc = fitz.open(stream=readable_file, filetype="pdf")
 
     # Initialize an empty dictionary to hold the sections
     sections = {}
@@ -112,24 +112,26 @@ keywords_section = {
 }
 
 
-def parse_resume_files():
-    # Get a list of all the files in the 'resumes' directory
-    resume_files = os.listdir("resumes")
-
+def parse_resume_files(resume_files):
     # Initialize an empty list to hold the resumes
     resumes = []
 
     # Loop over each file
-    for filename in resume_files:
+    for resume_file in resume_files:
         # Check if the file is a PDF
-        if filename.endswith(".pdf"):
-            print(f"Processing {filename}...")
-            pdf_path = os.path.join("resumes", filename)
+        if resume_file.name.endswith(".pdf"):
+            print(f"Processing {resume_file.name}...")
 
-            sections = extract_sections_from_pdf(pdf_path, keywords)
+            # Read the uploaded file into a bytes object
+            resume_bytes = resume_file.read()
+
+            # Create a readable file object
+            readable_file = io.BytesIO(resume_bytes)
+
+            sections = extract_sections_from_pdf(readable_file, keywords)
             new_sections = map_sections(sections, keywords_section)
             # Add the filename to the dictionary
-            new_sections["Filename"] = filename
+            new_sections["Filename"] = resume_file
 
             # Add the dictionary to the list
             resumes.append(new_sections)
