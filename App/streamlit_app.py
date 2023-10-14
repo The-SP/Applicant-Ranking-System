@@ -3,6 +3,7 @@ import pandas as pd
 
 from resume_parse import parse_resume_files
 from applicant_ranking import ranking_algorithm
+from visualization import visualize_total_scores, visualize_grouped_bar_chart, visualize_feature_weights
 
 
 def main():
@@ -60,6 +61,10 @@ def main():
                 df_resume_rankings = ranking_algorithm(target_job)
                 st.subheader("Final Resume Rankings")
                 st.write(df_resume_rankings)
+
+                visualize_total_scores(df_resume_rankings)
+                visualize_grouped_bar_chart(df_resume_rankings)
+                visualize_feature_weights()
             else:
                 st.write("No files uploaded!")
 
