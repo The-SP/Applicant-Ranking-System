@@ -130,6 +130,12 @@ def parse_resume_files(resume_files):
 
             sections = extract_sections_from_pdf(readable_file, keywords)
             new_sections = map_sections(sections, keywords_section)
+
+            # Ensure that all section titles are present
+            for section in section_keywords.keys():
+                if section not in new_sections:
+                    new_sections[section] = ""
+                    
             # Add the filename to the dictionary
             new_sections["Filename"] = resume_file
 

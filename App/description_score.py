@@ -14,9 +14,9 @@ def clean_description(text):
 
 def preprocess_job(target_job):
     title, description, skills = (
-        target_job.title,
-        target_job.description,
-        target_job.skills,
+        target_job['title'],
+        target_job['description'],
+        target_job['skills'],
     )
     # Clean description
     if skills:
