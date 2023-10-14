@@ -4,10 +4,10 @@ from description_score import get_description_score
 from skill_score import get_skills_score, get_projects_score
 from education_score import get_education_score
 from experience_score import get_experience_score
-from total_score import calculate_total_score, visualize_heatmap
+from total_score import calculate_total_score
 
 
-def ranking_algorithm(target_job):
+def ranking_algorithm(target_job, weights):
     # df_jobs = pd.read_csv("jobs.csv")
     # target_job = df_jobs.loc[2]
 
@@ -34,7 +34,7 @@ def ranking_algorithm(target_job):
     get_experience_score(df_resume, target_job)
 
     print("Calculating Total score...")
-    df_resume_rankings_sorted = calculate_total_score(df_resume)
+    df_resume_rankings_sorted = calculate_total_score(df_resume, weights)
 
     print("\n Final Results...")
     # print(df_resume.columns)
@@ -62,4 +62,3 @@ def ranking_algorithm(target_job):
         ]
     )
     return df_resume_rankings_sorted
-    # visualize_heatmap(df_resume)
