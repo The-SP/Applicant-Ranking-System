@@ -36,29 +36,31 @@ def ranking_algorithm(target_job, weights):
     print("Calculating Total score...")
     df_resume_rankings_sorted = calculate_total_score(df_resume, weights)
 
-    print("\n Final Results...")
-    # print(df_resume.columns)
-    print(
-        df_resume[
-            [
-                "Filename",
-                # "clean_resume_text",
-                "description_score",
-                # "SKILLS",
-                # "skills_vector",
-                "skills_score",
-                # "PROJECTS",
-                # "projects_vector",
-                "projects_score",
-                # "EDUCATION",
-                # "education_degree",
-                # "education_major",
-                "education_score",
-                # "EXPERIENCE",
-                # "experience_dates",
-                "experience_score",
-                "total_score",
-            ]
-        ]
-    )
+    print("\nEvaluation complete.")
+
+    # print("\n Final Results...")
+    # print(
+    #     df_resume[
+    #         [
+    #             "Filename",
+    #             # "clean_resume_text",
+    #             "description_score",
+    #             # "SKILLS",
+    #             # "skills_vector",
+    #             "skills_score",
+    #             # "PROJECTS",
+    #             # "projects_vector",
+    #             "projects_score",
+    #             # "EDUCATION",
+    #             # "education_degree",
+    #             # "education_major",
+    #             "education_score",
+    #             # "EXPERIENCE",
+    #             # "experience_dates",
+    #             "experience_score",
+    #             "total_score",
+    #         ]
+    #     ]
+    # )
+
     return df_resume_rankings_sorted

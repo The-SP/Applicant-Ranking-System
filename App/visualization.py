@@ -14,12 +14,15 @@ def visualize_total_scores(df_resume_rankings):
     st.pyplot(plt)
 
 
-def visualize_grouped_bar_chart(df_resume_rankings):
+def visualize_grouped_bar_chart(df):
     # Grouped bar chart for section scores
     plt.figure(figsize=(12, 6))
 
+    # Set 'Filename' as the index (for plt legend)
+    df = df.set_index("Filename")
+
     # Select relevant columns for the bar chart
-    scores = df_resume_rankings[
+    scores = df[
         [
             "description_score",
             "skills_score",
@@ -48,7 +51,7 @@ def visualize_grouped_bar_chart(df_resume_rankings):
 
 def visualize_feature_weights(weights):
     # Set up the figure and axis
-    plt.figure(figsize=(8, 8))
+    plt.figure(figsize=(6, 6))
 
     sns.set_palette("pastel")
     plt.title("Weight distribution for features")

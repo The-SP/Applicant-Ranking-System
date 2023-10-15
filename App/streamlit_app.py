@@ -1,5 +1,4 @@
 import streamlit as st
-import pandas as pd
 
 from resume_parse import parse_resume_files
 from applicant_ranking import ranking_algorithm
@@ -12,6 +11,8 @@ from visualization import (
 
 
 def main():
+    # Set the page title
+    st.set_page_config(page_title="Resume Ranker")
     st.title("Applicant Ranking System")
 
     # Set default values
@@ -137,35 +138,48 @@ def main():
     # Resume Upload
     # Check if the target job is not empty dictionary
     if target_job and total_weight == 1:
-        st.write(weights)
+        if st.checkbox("Visualize feature weights"):
+            visualize_feature_weights(weights)
+
         # Convert the dictionary to a Series
         st.subheader("Upload Resumes")
         resumes = st.file_uploader(
             "Upload Applicant's Resumes", type=["pdf"], accept_multiple_files=True
         )
 
-        if st.button("Display Filenames"):
-            if resumes:
-                # Join all filenames into a single string
-                filenames = " | ".join([resume.name for resume in resumes])
-                st.write(filenames)
-
-        if st.button("Parse Resume"):
-            st.write(target_job)
-            if resumes:
-                st.write("Parsing Resume Files...")
+        if resumes:
+            if st.button("Parse Resume"):
+                info_message1 = st.info(
+                    "Processing uploaded resumes to extract relevant information..."
+                )
                 parse_resume_files(resumes)
-                st.write("Evaluating Resumes...")
+                info_message2 = st.info(
+                    "Evaluating candidates..."
+                )
+
                 df_resume_rankings = ranking_algorithm(target_job, weights)
+
+                info_message1.empty()  # Remove the info message
+                info_message2.empty()  # Remove the info message
+
                 st.subheader("Final Resume Rankings")
-                st.write(df_resume_rankings)
+                st.write(
+                    df_resume_rankings[
+                        [
+                            "Filename",
+                            "total_score",
+                            "description_score",
+                            "education_score",
+                            "experience_score",
+                            "skills_score",
+                            "projects_score",
+                        ]
+                    ]
+                )
 
                 visualize_total_scores(df_resume_rankings)
                 visualize_grouped_bar_chart(df_resume_rankings)
-                visualize_feature_weights(weights)
                 visualize_heatmap(df_resume_rankings)
-            else:
-                st.error("No files uploaded! Please upload applicant resumes.")
 
 
 if __name__ == "__main__":
