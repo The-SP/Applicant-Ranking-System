@@ -17,11 +17,11 @@ def main():
 
     # Set default values
     default_data = {
-        "title": "Software Developer",
+        "title": "Full Stack Web Developer",
         "description": "Required skilled web developer.",
-        "skills": "Python, Django, Django Rest, React, Javascript",
-        "education": "Bachelor in Computer Engineering",
-        "experience": "2 years",
+        "skills": "Python, Django, React, Javascript, HTML, CSS",
+        "education": "Bachelor in Computer Science",
+        "experience": "4 years",
     }
 
     # Job Description Inputs
@@ -42,7 +42,7 @@ def main():
                 "Description",
                 min_value=0.0,
                 max_value=1.0,
-                value=0.2,
+                value=0.1,
                 step=0.05,
             ),
             2,
@@ -66,7 +66,7 @@ def main():
                 "Experience",
                 min_value=0.0,
                 max_value=1.0,
-                value=0.2,
+                value=0.35,
                 step=0.05,
             ),
             2,
@@ -90,7 +90,7 @@ def main():
                 "Projects",
                 min_value=0.0,
                 max_value=1.0,
-                value=0.2,
+                value=0.15,
                 step=0.05,
                 #
             ),

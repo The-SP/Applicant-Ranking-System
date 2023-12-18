@@ -100,7 +100,7 @@ keywords_section = {
 }
 
 # Get a list of all the files in the 'resumes' directory
-resume_files = os.listdir("resumes")
+resume_files = os.listdir("resumes/web-dev")
 
 # Initialize an empty list to hold the resumes
 resumes = []
@@ -110,7 +110,7 @@ for filename in resume_files:
     # Check if the file is a PDF
     if filename.endswith(".pdf"):
         print(f"Processing {filename}...")
-        pdf_path = os.path.join("resumes", filename)
+        pdf_path = os.path.join("resumes/web-dev", filename)
 
         sections = extract_sections_from_pdf(pdf_path, keywords)
         new_sections = map_sections(sections, keywords_section)

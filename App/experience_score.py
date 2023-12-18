@@ -109,20 +109,23 @@ def extract_years(dates):
         if " - " not in date:
             continue
 
-        # Split the date range into start and end dates
-        start_date, end_date = date.split(" - ")
+        try:
+            # Split the date range into start and end dates
+            start_date, end_date = date.split(" - ")
 
-        # Replace 'Present' or 'current' with today's date
-        if "present" in end_date.lower() or "current" in end_date.lower():
-            end_date = datetime.today().strftime("%m/%Y")
+            # Replace 'Present' or 'current' with today's date
+            if "present" in end_date.lower() or "current" in end_date.lower():
+                end_date = datetime.today().strftime("%m/%Y")
 
-        # Parse the dates
-        start_date = parser.parse(start_date)
-        end_date = parser.parse(end_date)
+            # Parse the dates
+            start_date = parser.parse(start_date)
+            end_date = parser.parse(end_date)
 
-        # Calculate the difference in years (considering months)
-        diff = relativedelta(end_date, start_date)
-        years += round(diff.years + diff.months / 12, 2)
+            # Calculate the difference in years (considering months)
+            diff = relativedelta(end_date, start_date)
+            years += round(diff.years + diff.months / 12, 2)
+        except ValueError as e:
+                print(f"Error parsing dates: {e}. Skipping this entry.")
 
     return years
 

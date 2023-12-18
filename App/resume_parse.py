@@ -120,7 +120,7 @@ def parse_resume_files(resume_files):
                     new_sections[section] = ""
 
             # Add the filename to the dictionary
-            new_sections["Filename"] = resume_file.name
+            new_sections["Filename"] = resume_file.name.replace('.pdf', '')
 
             # Add the dictionary to the list
             resumes.append(new_sections)

@@ -9,7 +9,7 @@ def visualize_total_scores(df_resume_rankings):
     # Bar chart for total scores using seaborn
     plt.figure(figsize=(10, 6))
     sns.barplot(x="Filename", y="total_score", data=df_resume_rankings)
-    plt.xticks(rotation=45)
+    plt.xticks(rotation=85)
     plt.title("Total Scores by Resume")
     st.pyplot(plt)
 
@@ -22,7 +22,7 @@ def visualize_grouped_bar_chart(df):
     df = df.set_index("Filename")
 
     # Select relevant columns for the bar chart
-    scores = df[
+    scores = df.head(5)[
         [
             "description_score",
             "skills_score",
@@ -40,8 +40,8 @@ def visualize_grouped_bar_chart(df):
     scores.plot(kind="bar")
     plt.xlabel("Sections")
     plt.ylabel("Score")
-    plt.title("Scores for Each Section")
-    plt.xticks(rotation=45)
+    plt.title("Scores for Each Section for Top 5 resumes")
+    plt.xticks(rotation=85)
     plt.legend(title="Resumes", bbox_to_anchor=(1.05, 1), loc="upper left")
     plt.tight_layout()
 
@@ -51,7 +51,7 @@ def visualize_grouped_bar_chart(df):
 
 def visualize_feature_weights(weights):
     # Set up the figure and axis
-    plt.figure(figsize=(6, 6))
+    plt.figure(figsize=(4, 4))
 
     sns.set_palette("pastel")
     plt.title("Weight distribution for features")
