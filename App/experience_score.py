@@ -31,15 +31,19 @@ def create_nlp_for_experience():
     # Most of the date patterns are detected by default DATE entity
     # Define the pattern for '05/2015 - 06/2017' and '10/2020 - Present'.
     patterns = [
-        {
-            "label": "DATE",
-            "pattern": [{"SHAPE": "dd/dddd"}, {"TEXT": "-"}, {"SHAPE": "dd/dddd"}],
-        },
-        {
-            "label": "DATE",
-            "pattern": [{"SHAPE": "dd/dddd"}, {"TEXT": "-"}, {"LOWER": "present"}],
-        },
-    ]
+        # 05/2015 - 06/2017
+        {"label": "DATE", "pattern": [{"SHAPE": "dd/dddd"}, {"TEXT": "-"}, {"SHAPE": "dd/dddd"}]},
+
+        # 10/2020 - Present
+        {"label": "DATE", "pattern": [{"SHAPE": "dd/dddd"}, {"TEXT": "-"}, {"LOWER": "present"}]},
+        {"label": "DATE", "pattern": [{"SHAPE": "dd/dddd"}, {"TEXT": "-"}, {"LOWER": "current"}]},
+
+        # Jan 2020 - current, March 2018 - Present
+        {"label": "DATE", "pattern": [{"LOWER": {"in": ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]}}, {"TEXT": {"REGEX": "^\d{4}$"}}, {"TEXT": "-"}, {"LOWER": {"in": ["current", "present"]}}]},
+
+        # 2020 - current
+        {"label": "DATE", "pattern": [{"SHAPE": "dddd"}, {"TEXT": "-"}, {"LOWER": {"in": ["current", "present"]}}]},
+        ]
 
     ruler = nlp.add_pipe("entity_ruler", before="ner")
     # Add the pattern to the ruler
@@ -58,8 +62,8 @@ def extract_years(dates):
         # Split the date range into start and end dates
         start_date, end_date = date.split(" - ")
 
-        # Replace 'Present' with today's date
-        if "Present" in end_date:
+        # Replace 'Present' or 'current' with today's date
+        if 'present' in end_date.lower() or 'current' in end_date.lower():
             end_date = datetime.today().strftime("%m/%Y")
 
         # Parse the dates

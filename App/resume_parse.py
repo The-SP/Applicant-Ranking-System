@@ -50,37 +50,6 @@ def map_sections(sections, keywords_section):
     return new_sections
 
 
-# Define a list of common resume section titles
-keywords = [
-    "PROFILE",
-    "SUMMARY",
-    "ABOUT ME",
-    "PERSONAL PROFILE",
-    "PERSONAL SUMMARY",
-    "WORK EXPERIENCE",
-    "EXPERIENCE",
-    "JOB HISTORY",
-    "EMPLOYMENT HISTORY",
-    "EDUCATION",
-    "EDUCATIONAL BACKGROUND",
-    "ACADEMIC HISTORY",
-    "SKILLS",
-    "ABILITIES",
-    "COMPETENCIES",
-    "EXPERTISE",
-    "PROJECTS",
-    "PORTFOLIO",
-    "CERTIFICATIONS",
-    "CREDENTIALS",
-    "ACCREDITATIONS",
-    "AWARDS",
-    "HONORS",
-    "ACHIEVEMENTS",
-    "INTERESTS",
-    "HOBBIES",
-    "ACTIVITIES",
-]
-
 # Define a dictionary of common resume section titles and their associated keywords
 section_keywords = {
     "PROFILE": [
@@ -93,16 +62,28 @@ section_keywords = {
     "EXPERIENCE": [
         "EXPERIENCE",
         "WORK EXPERIENCE",
+        "PROFESSIONAL EXPERIENCE",
         "JOB HISTORY",
         "EMPLOYMENT HISTORY",
     ],
     "EDUCATION": ["EDUCATION", "EDUCATIONAL BACKGROUND", "ACADEMIC HISTORY"],
-    "SKILLS": ["SKILLS", "ABILITIES", "COMPETENCIES", "EXPERTISE"],
+    "SKILLS": [
+        "SKILLS",
+        "PROGRAMMING SKILLS",
+        "ABILITIES",
+        "COMPETENCIES",
+        "EXPERTISE",
+    ],
     "PROJECTS": ["PROJECTS", "PORTFOLIO"],
     "CERTIFICATIONS": ["CERTIFICATIONS", "CREDENTIALS", "ACCREDITATIONS"],
     "AWARDS": ["AWARDS", "HONORS", "ACHIEVEMENTS"],
     "INTERESTS": ["INTERESTS", "HOBBIES", "ACTIVITIES"],
 }
+
+# Create a list of all keywords from the section_keywords dictionary
+keywords = [
+    keyword for keyword_list in section_keywords.values() for keyword in keyword_list
+]
 
 # Create a reverse mapping for easy lookup
 keywords_section = {
