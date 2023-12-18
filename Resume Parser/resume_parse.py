@@ -2,6 +2,8 @@ import os
 import fitz
 import pandas as pd
 
+potential_section_titles = []
+
 
 def extract_sections_from_pdf(pdf_path, keywords):
     # Open the PDF file
@@ -20,13 +22,16 @@ def extract_sections_from_pdf(pdf_path, keywords):
             if "lines" in b:
                 for l in b["lines"]:  # iterate through the text lines
                     for s in l["spans"]:  # iterate through the text spans
-                        # # check if the text is bold and uppercase
-                        # if (
-                        #     s["flags"] == 20 and s["text"].isupper()
-                        # ):
-                        #     # This is a section title, so start a new section
-                        #     current_section = s["text"]
-                        #     sections[current_section] = ""
+                        # check if the text is bold and uppercase
+                        if s["flags"] == 20 and s["text"].isupper():
+                            """
+                            This is to identify different new keywords that could be used as section titles by various resumes
+                            """
+                            if s["text"] not in keywords:
+                                potential_section_titles.append(s["text"])
+                            # # This is a section title, so start a new section
+                            # current_section = s["text"]
+                            # sections[current_section] = ""
 
                         if any(keyword == s["text"].upper() for keyword in keywords):
                             # The text contains a keyword, so start a new section
@@ -130,3 +135,9 @@ df = df.fillna("")
 # Write the DataFrame to a CSV file
 df.to_csv("resume_sections.csv", index=False)
 print("Finished writing data to CSV.")
+
+
+print("\nPotential Section Titles")
+print("-" * 100)
+print(potential_section_titles)
+print("-" * 100)
