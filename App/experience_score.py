@@ -32,18 +32,68 @@ def create_nlp_for_experience():
     # Define the pattern for '05/2015 - 06/2017' and '10/2020 - Present'.
     patterns = [
         # 05/2015 - 06/2017
-        {"label": "DATE", "pattern": [{"SHAPE": "dd/dddd"}, {"TEXT": "-"}, {"SHAPE": "dd/dddd"}]},
-
+        {
+            "label": "DATE",
+            "pattern": [{"SHAPE": "dd/dddd"}, {"TEXT": "-"}, {"SHAPE": "dd/dddd"}],
+        },
         # 10/2020 - Present
-        {"label": "DATE", "pattern": [{"SHAPE": "dd/dddd"}, {"TEXT": "-"}, {"LOWER": "present"}]},
-        {"label": "DATE", "pattern": [{"SHAPE": "dd/dddd"}, {"TEXT": "-"}, {"LOWER": "current"}]},
-
+        {
+            "label": "DATE",
+            "pattern": [{"SHAPE": "dd/dddd"}, {"TEXT": "-"}, {"LOWER": "present"}],
+        },
+        {
+            "label": "DATE",
+            "pattern": [{"SHAPE": "dd/dddd"}, {"TEXT": "-"}, {"LOWER": "current"}],
+        },
         # Jan 2020 - current, March 2018 - Present
-        {"label": "DATE", "pattern": [{"LOWER": {"in": ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec", "january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"]}}, {"TEXT": {"REGEX": "^\d{4}$"}}, {"TEXT": "-"}, {"LOWER": {"in": ["current", "present"]}}]},
-
+        {
+            "label": "DATE",
+            "pattern": [
+                {
+                    "LOWER": {
+                        "in": [
+                            "jan",
+                            "feb",
+                            "mar",
+                            "apr",
+                            "may",
+                            "jun",
+                            "jul",
+                            "aug",
+                            "sep",
+                            "oct",
+                            "nov",
+                            "dec",
+                            "january",
+                            "february",
+                            "march",
+                            "april",
+                            "may",
+                            "june",
+                            "july",
+                            "august",
+                            "september",
+                            "october",
+                            "november",
+                            "december",
+                        ]
+                    }
+                },
+                {"TEXT": {"REGEX": "^\d{4}$"}},
+                {"TEXT": "-"},
+                {"LOWER": {"in": ["current", "present"]}},
+            ],
+        },
         # 2020 - current
-        {"label": "DATE", "pattern": [{"SHAPE": "dddd"}, {"TEXT": "-"}, {"LOWER": {"in": ["current", "present"]}}]},
-        ]
+        {
+            "label": "DATE",
+            "pattern": [
+                {"SHAPE": "dddd"},
+                {"TEXT": "-"},
+                {"LOWER": {"in": ["current", "present"]}},
+            ],
+        },
+    ]
 
     ruler = nlp.add_pipe("entity_ruler", before="ner")
     # Add the pattern to the ruler
@@ -63,7 +113,7 @@ def extract_years(dates):
         start_date, end_date = date.split(" - ")
 
         # Replace 'Present' or 'current' with today's date
-        if 'present' in end_date.lower() or 'current' in end_date.lower():
+        if "present" in end_date.lower() or "current" in end_date.lower():
             end_date = datetime.today().strftime("%m/%Y")
 
         # Parse the dates
@@ -82,19 +132,24 @@ def get_experience_score(df_resume, target_job):
 
     nlp = create_nlp_for_experience()
 
+    # First, replace En-dash '–' with Hyphen '-' before NER. e.g. Jun 2018 – Present
+    df_resume["EXPERIENCE"] = df_resume["EXPERIENCE"].str.replace("–", "-")
+
     experience_date_vectors = []
     # Calculate similarity scores for each applicant
     applicant_scores = []
     for applicant_experience in df_resume["EXPERIENCE"]:
         doc = nlp(applicant_experience)
 
-        # Extract the dates
-        extracted_dates = [ent.text for ent in doc.ents if ent.label_ == "DATE"]
+        # Extract the dates that are in the 'start - end' format
+        extracted_dates = [
+            ent.text for ent in doc.ents if ent.label_ == "DATE" and " - " in ent.text
+        ]
         experience_date_vectors.append(extracted_dates)
 
         applicant_years = extract_years(extracted_dates)
 
-        if target_job_experience == 0:  # no experience requireed
+        if target_job_experience == 0:  # no experience required
             similarity_score = 1.0
         else:
             similarity_score = min(applicant_years / target_job_experience, 1.0)

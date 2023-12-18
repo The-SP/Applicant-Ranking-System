@@ -20,13 +20,15 @@ def extract_sections_from_pdf(readable_file, keywords):
             if "lines" in b:
                 for l in b["lines"]:  # iterate through the text lines
                     for s in l["spans"]:  # iterate through the text spans
-                        if (
-                            s["flags"] == 20 and s["text"].isupper()
-                        ):  # check if the text is bold and uppercase
-                            # This is a section title, so start a new section
-                            current_section = s["text"]
-                            sections[current_section] = ""
-                        elif any(keyword == s["text"].upper() for keyword in keywords):
+                        # # check if the text is bold and uppercase
+                        # if (
+                        #     s["flags"] == 20 and s["text"].isupper()
+                        # ):
+                        #     # This is a section title, so start a new section
+                        #     current_section = s["text"]
+                        #     sections[current_section] = ""
+
+                        if any(keyword == s["text"].upper() for keyword in keywords):
                             # The text contains a keyword, so start a new section
                             current_section = s["text"].upper()
                             sections[current_section] = ""
@@ -116,7 +118,7 @@ def parse_resume_files(resume_files):
             for section in section_keywords.keys():
                 if section not in new_sections:
                     new_sections[section] = ""
-                    
+
             # Add the filename to the dictionary
             new_sections["Filename"] = resume_file.name
 
