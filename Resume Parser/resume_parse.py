@@ -4,6 +4,8 @@ import pandas as pd
 
 potential_section_titles = []
 
+RESUME_PATH = "resumes/resume-worded"
+
 
 def extract_sections_from_pdf(pdf_path, keywords):
     # Open the PDF file
@@ -70,6 +72,7 @@ section_keywords = {
         "EXPERIENCE",
         "WORK EXPERIENCE",
         "PROFESSIONAL EXPERIENCE",
+        "RELEVANT WORK EXPERIENCE",
         "JOB HISTORY",
         "EMPLOYMENT HISTORY",
     ],
@@ -100,7 +103,7 @@ keywords_section = {
 }
 
 # Get a list of all the files in the 'resumes' directory
-resume_files = os.listdir("resumes/web-dev")
+resume_files = os.listdir(RESUME_PATH)
 
 # Initialize an empty list to hold the resumes
 resumes = []
@@ -110,18 +113,18 @@ for filename in resume_files:
     # Check if the file is a PDF
     if filename.endswith(".pdf"):
         print(f"Processing {filename}...")
-        pdf_path = os.path.join("resumes/web-dev", filename)
+        pdf_path = os.path.join(RESUME_PATH, filename)
 
         sections = extract_sections_from_pdf(pdf_path, keywords)
         new_sections = map_sections(sections, keywords_section)
+
+        # Add the filename to the dictionary
+        new_sections["Filename"] = filename.replace('.pdf', '')
 
         # Ensure that all section titles are present
         for section in section_keywords.keys():
             if section not in new_sections:
                 new_sections[section] = ""
-
-        # Add the filename to the dictionary
-        new_sections["Filename"] = filename
 
         # Add the dictionary to the list
         resumes.append(new_sections)

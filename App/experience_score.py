@@ -28,6 +28,33 @@ def extract_min_experience(text):
 def create_nlp_for_experience():
     nlp = spacy.load("en_core_web_sm")
 
+    VALID_MONTH_NAMES = [
+        "jan",
+        "feb",
+        "mar",
+        "apr",
+        "may",
+        "jun",
+        "jul",
+        "aug",
+        "sep",
+        "oct",
+        "nov",
+        "dec",
+        "january",
+        "february",
+        "march",
+        "april",
+        "may",
+        "june",
+        "july",
+        "august",
+        "september",
+        "october",
+        "november",
+        "december",
+    ]
+
     # Most of the date patterns are detected by default DATE entity
     # Define the pattern for '05/2015 - 06/2017' and '10/2020 - Present'.
     patterns = [
@@ -49,39 +76,21 @@ def create_nlp_for_experience():
         {
             "label": "DATE",
             "pattern": [
-                {
-                    "LOWER": {
-                        "in": [
-                            "jan",
-                            "feb",
-                            "mar",
-                            "apr",
-                            "may",
-                            "jun",
-                            "jul",
-                            "aug",
-                            "sep",
-                            "oct",
-                            "nov",
-                            "dec",
-                            "january",
-                            "february",
-                            "march",
-                            "april",
-                            "may",
-                            "june",
-                            "july",
-                            "august",
-                            "september",
-                            "october",
-                            "november",
-                            "december",
-                        ]
-                    }
-                },
+                {"LOWER": {"in": VALID_MONTH_NAMES}},
                 {"TEXT": {"REGEX": "^\d{4}$"}},
                 {"TEXT": "-"},
                 {"LOWER": {"in": ["current", "present"]}},
+            ],
+        },
+        # Jun 2016 - Sep 2016
+        {
+            "label": "DATE",
+            "pattern": [
+                {"LOWER": {"in": VALID_MONTH_NAMES}},
+                {"TEXT": {"REGEX": "^\d{4}$"}},
+                {"TEXT": "-"},
+                {"LOWER": {"in": VALID_MONTH_NAMES}},
+                {"TEXT": {"REGEX": "^\d{4}$"}},
             ],
         },
         # 2020 - current
@@ -106,12 +115,12 @@ def extract_years(dates):
     years = 0
     for date in dates:
         # Check if the date is in the "start - end" format
-        if " - " not in date:
+        if "-" not in date:
             continue
 
         try:
             # Split the date range into start and end dates
-            start_date, end_date = date.split(" - ")
+            start_date, end_date = date.split("-")
 
             # Replace 'Present' or 'current' with today's date
             if "present" in end_date.lower() or "current" in end_date.lower():
@@ -125,7 +134,7 @@ def extract_years(dates):
             diff = relativedelta(end_date, start_date)
             years += round(diff.years + diff.months / 12, 2)
         except ValueError as e:
-                print(f"Error parsing dates: {e}. Skipping this entry.")
+            print(f"Error parsing dates: {e}. Skipping this entry.")
 
     return years
 
@@ -146,7 +155,7 @@ def get_experience_score(df_resume, target_job):
 
         # Extract the dates that are in the 'start - end' format
         extracted_dates = [
-            ent.text for ent in doc.ents if ent.label_ == "DATE" and " - " in ent.text
+            ent.text for ent in doc.ents if ent.label_ == "DATE" and "-" in ent.text
         ]
         experience_date_vectors.append(extracted_dates)
 
