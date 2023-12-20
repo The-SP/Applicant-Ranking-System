@@ -3,13 +3,15 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 
-def visualize_total_scores(df_resume_rankings):
+def visualize_total_scores(df):
     st.subheader("Resume scores")
 
     # Bar chart for total scores using seaborn
     plt.figure(figsize=(10, 6))
-    sns.barplot(x="Filename", y="total_score", data=df_resume_rankings)
-    plt.xticks(rotation=85)
+    ax = sns.barplot(x="Filename", y="total_score", data=df)
+    for p in ax.patches:
+        ax.annotate(f"{p.get_height():.2f}", (p.get_x() * 1.01, p.get_height() * 1.01))
+    plt.xticks(rotation=90)
     plt.title("Total Scores by Resume")
     st.pyplot(plt)
 
@@ -41,8 +43,7 @@ def visualize_grouped_bar_chart(df):
     plt.xlabel("Sections")
     plt.ylabel("Score")
     plt.title("Scores for Each Section for Top 5 resumes")
-    plt.xticks(rotation=85)
-    plt.legend(title="Resumes", bbox_to_anchor=(1.05, 1), loc="upper left")
+    plt.legend(title="Resumes", loc="best", fontsize=7)
     plt.tight_layout()
 
     # Display the plot using st.pyplot()
@@ -52,11 +53,9 @@ def visualize_grouped_bar_chart(df):
 def visualize_feature_weights(weights):
     # Set up the figure and axis
     plt.figure(figsize=(4, 4))
-
     sns.set_palette("pastel")
     plt.title("Weight distribution for features")
     plt.pie(weights.values(), labels=weights.keys(), autopct="%1.1f%%", startangle=140)
-
     # Display the pie chart
     st.pyplot(plt)
 
@@ -74,7 +73,7 @@ def visualize_heatmap(df):
     # Set 'Filename' as the index
     df = df.set_index("Filename")
     plt.figure(figsize=(10, 6))
-    sns.heatmap(df[columns_to_visualize], cmap="YlGnBu", annot=True, fmt=".2f")
+    sns.heatmap(df[columns_to_visualize], cmap="icefire", annot=True, fmt=".2f")
     plt.title("Applicant Rankings Score - Heatmap")
     plt.xticks(rotation=45)
     plt.tight_layout()
