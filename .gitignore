@@ -2,5 +2,6 @@ __pycache__
 resumes
 prompt.md
 resume_sections.csv
+all_resume_sections.csv
 jobs.csv
 keywords.txt

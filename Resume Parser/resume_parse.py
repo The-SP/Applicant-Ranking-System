@@ -29,7 +29,7 @@ def extract_sections_from_pdf(pdf_path, keywords):
                             """
                             This is to identify different new keywords that could be used as section titles by various resumes
                             """
-                            if s["text"] not in keywords:
+                            if s["text"] not in keywords and s["text"] not in potential_section_titles:
                                 potential_section_titles.append(s["text"])
                             # # This is a section title, so start a new section
                             # current_section = s["text"]
