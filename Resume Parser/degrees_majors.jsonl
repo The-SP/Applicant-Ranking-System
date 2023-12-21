@@ -12,18 +12,19 @@
 {"label": "DEGREE|BACHELOR", "pattern": [{"LOWER": "4-year"}]}
 {"label": "DEGREE|BACHELOR", "pattern": [{"LOWER": "4 year"}]}
 {"label": "DEGREE|BACHELOR", "pattern": [{"LOWER": "four year"}]}
-{"label": "DEGREE|BACHELOR", "pattern": [{"LOWER": "college"}]}
 {"label": "DEGREE|BACHELOR", "pattern": [{"LOWER": "undergraduate"}]}
 {"label": "DEGREE|BACHELOR", "pattern": [{"LOWER": "university"}]}
 {"label": "DEGREE|BACHELOR", "pattern": [{"LOWER": "bsc"}]}
 {"label": "DEGREE|BACHELOR", "pattern": [{"LOWER": "bs"}]}
 {"label": "DEGREE|BACHELOR", "pattern": [{"LOWER": "be"}]}
 {"label": "DEGREE|BACHELOR", "pattern": [{"LOWER": "b.e"}]}
+{"label": "DEGREE|BACHELOR", "pattern": [{"LOWER": "b.tech"}]}
 {"label": "DEGREE|MASTER", "pattern": [{"LOWER": "master"}]}
 {"label": "DEGREE|MASTER", "pattern": [{"LOWER": "masters"}]}
 {"label": "DEGREE|MASTER", "pattern": [{"LOWER": "master's"}]}
 {"label": "DEGREE|MASTER", "pattern": [{"LOWER": "ms"}]}
 {"label": "DEGREE|MASTER", "pattern": [{"LOWER": "m.s"}]}
+{"label": "DEGREE|MASTER", "pattern": [{"LOWER": "m.tech"}]}
 {"label": "DEGREE|PHD", "pattern": [{"LOWER": "phd"}]}
 {"label": "DEGREE|PHD", "pattern": [{"LOWER": "ph.d"}]}
 {"label": "DEGREE|PHD", "pattern": [{"LOWER": "doctorate"}]}

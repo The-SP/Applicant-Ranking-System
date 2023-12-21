@@ -148,6 +148,7 @@ def get_experience_score(df_resume, target_job):
     df_resume["EXPERIENCE"] = df_resume["EXPERIENCE"].str.replace("–", "-")
 
     experience_date_vectors = []
+    experience_years = []
     # Calculate similarity scores for each applicant
     applicant_scores = []
     for applicant_experience in df_resume["EXPERIENCE"]:
@@ -160,6 +161,7 @@ def get_experience_score(df_resume, target_job):
         experience_date_vectors.append(extracted_dates)
 
         applicant_years = extract_years(extracted_dates)
+        experience_years.append(applicant_years)
 
         if target_job_experience == 0:  # no experience required
             similarity_score = 1.0
@@ -168,4 +170,5 @@ def get_experience_score(df_resume, target_job):
         applicant_scores.append(similarity_score)
 
     df_resume["experience_dates"] = experience_date_vectors
+    df_resume['experience_years'] = experience_years
     df_resume["experience_score"] = applicant_scores

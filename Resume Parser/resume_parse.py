@@ -4,7 +4,7 @@ import pandas as pd
 
 potential_section_titles = []
 
-RESUME_PATH = "resumes/resume-worded"
+RESUME_PATH = "resumes/latex"
 
 
 def extract_sections_from_pdf(pdf_path, keywords):
@@ -35,9 +35,9 @@ def extract_sections_from_pdf(pdf_path, keywords):
                             # current_section = s["text"]
                             # sections[current_section] = ""
 
-                        if any(keyword == s["text"].upper() for keyword in keywords):
+                        if any(keyword == s["text"].strip().upper() for keyword in keywords):
                             # The text contains a keyword, so start a new section
-                            current_section = s["text"].upper()
+                            current_section = s["text"].strip().upper()
                             sections[current_section] = ""
                         elif current_section is not None:
                             # This is not a section title, so append it to the current section
@@ -79,6 +79,7 @@ section_keywords = {
     "EDUCATION": ["EDUCATION", "EDUCATIONAL BACKGROUND", "ACADEMIC HISTORY"],
     "SKILLS": [
         "SKILLS",
+        "TECHNICAL SKILLS",
         "PROGRAMMING SKILLS",
         "ABILITIES",
         "COMPETENCIES",

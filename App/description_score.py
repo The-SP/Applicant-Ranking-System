@@ -7,6 +7,8 @@ from sklearn.metrics.pairwise import cosine_similarity
 def clean_description(text):
     # Remove punctuation and numbers
     text = re.sub(r"[^a-zA-Z\+]", " ", text)
+    # Remove extra blank spaces
+    text = re.sub(r'\s+', ' ', text).strip()
     # Convert to lowercase
     text = text.lower()
     return text

@@ -75,6 +75,5 @@ def visualize_heatmap(df):
     plt.figure(figsize=(10, 6))
     sns.heatmap(df[columns_to_visualize], cmap="icefire", annot=True, fmt=".2f")
     plt.title("Applicant Rankings Score - Heatmap")
-    plt.xticks(rotation=45)
     plt.tight_layout()
     st.pyplot(plt)
