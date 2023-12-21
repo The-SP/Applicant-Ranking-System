@@ -10,7 +10,7 @@ def visualize_total_scores(df):
     plt.figure(figsize=(10, 6))
     ax = sns.barplot(x="Filename", y="total_score", data=df)
     for p in ax.patches:
-        ax.annotate(f"{p.get_height():.2f}", (p.get_x() * 1.01, p.get_height() * 1.01))
+        ax.annotate(f"{int(p.get_height()*100)}", (p.get_x()*1.01, p.get_height() * 1.01))
     plt.xticks(rotation=90)
     plt.title("Total Scores by Resume")
     st.pyplot(plt)
@@ -73,7 +73,7 @@ def visualize_heatmap(df):
     # Set 'Filename' as the index
     df = df.set_index("Filename")
     plt.figure(figsize=(10, 6))
-    sns.heatmap(df[columns_to_visualize], cmap="icefire", annot=True, fmt=".2f")
+    sns.heatmap(df[columns_to_visualize], cmap="YlGnBu", annot=True, fmt=".2f")
     plt.title("Applicant Rankings Score - Heatmap")
     plt.tight_layout()
     st.pyplot(plt)
