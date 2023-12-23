@@ -1,6 +1,8 @@
 import re
+import numpy as np
 
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sentence_transformers import SentenceTransformer
+from tqdm import tqdm
 from sklearn.metrics.pairwise import cosine_similarity
 
 
@@ -8,7 +10,7 @@ def clean_description(text):
     # Remove punctuation and numbers
     text = re.sub(r"[^a-zA-Z\+]", " ", text)
     # Remove extra blank spaces
-    text = re.sub(r'\s+', ' ', text).strip()
+    text = re.sub(r"\s+", " ", text).strip()
     # Convert to lowercase
     text = text.lower()
     return text
@@ -16,9 +18,9 @@ def clean_description(text):
 
 def preprocess_job(target_job):
     title, description, skills = (
-        target_job['title'],
-        target_job['description'],
-        target_job['skills'],
+        target_job["title"],
+        target_job["description"],
+        target_job["skills"],
     )
     # Clean description
     if skills:
@@ -31,6 +33,10 @@ def preprocess_job(target_job):
 
 
 def get_description_score(df_resume, target_job):
+    # Load a pre-trained sentence transformer model
+    MODEL_NAME = "bert-base-nli-mean-tokens"
+    model = SentenceTransformer(MODEL_NAME)
+
     # Combine text from all columns to get overall resume text
     df_resume["clean_resume_text"] = (
         df_resume[["PROFILE", "EXPERIENCE", "PROJECTS", "CERTIFICATIONS"]]
@@ -39,18 +45,19 @@ def get_description_score(df_resume, target_job):
         .apply(clean_description)
     )
 
-    # Initialize the TfidfVectorizer
-    # min_df=3 means ignore terms that appear in less than 3 document
-    tfidf_vectorizer = TfidfVectorizer(stop_words="english", min_df=3)
+    job_embeddings = model.encode(preprocess_job(target_job))
+    # resume_embeddings = model.encode(df_resume['clean_resume_text'])
 
-    # fit_transform the vectorizers and create tfidf matrix
-    tfidf_matrix = tfidf_vectorizer.fit_transform(
-        [preprocess_job(target_job)] + df_resume["clean_resume_text"].values.tolist()
+    resume_embeddings = np.zeros(
+        (len(df_resume), model.get_sentence_embedding_dimension())
     )
+    for i in tqdm(range(len(df_resume)), desc="Encoding resume texts", unit="resumes"):
+        resume_embeddings[i] = model.encode(df_resume.iloc[i]["clean_resume_text"])
 
     # Calculate cosine similarity between the job description and resumes
-    cosine_similarities = cosine_similarity(
-        tfidf_matrix[0:1], tfidf_matrix[1:]
-    ).flatten()
+    cosine_similarities = cosine_similarity(resume_embeddings, [job_embeddings])
+
+    # Set negative scores to 0
+    cosine_similarities[cosine_similarities < 0] = 0
 
     df_resume["description_score"] = cosine_similarities

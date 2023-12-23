@@ -42,7 +42,7 @@ def main():
                 "Description",
                 min_value=0.0,
                 max_value=1.0,
-                value=0.1,
+                value=0.15,
                 step=0.05,
             ),
             2,
@@ -90,7 +90,7 @@ def main():
                 "Projects",
                 min_value=0.0,
                 max_value=1.0,
-                value=0.15,
+                value=0.10,
                 step=0.05,
                 #
             ),
