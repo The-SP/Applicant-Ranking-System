@@ -73,7 +73,7 @@ def visualize_heatmap(df):
     # Set 'Filename' as the index
     df = df.set_index("Filename")
     plt.figure(figsize=(10, 6))
-    sns.heatmap(df[columns_to_visualize], cmap="YlGnBu", annot=True, fmt=".2f")
+    sns.heatmap(df[columns_to_visualize].head(20), cmap="YlGnBu", annot=True, fmt=".2f")
     plt.title("Applicant Rankings Score - Heatmap")
     plt.tight_layout()
     st.pyplot(plt)
