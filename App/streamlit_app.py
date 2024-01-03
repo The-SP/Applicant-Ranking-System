@@ -27,7 +27,7 @@ def main():
     # Job Description Inputs
     st.subheader("Job Description")
     title = st.text_input("Title", default_data["title"])
-    description = st.text_input("Description", default_data["description"])
+    description = st.text_area("Description", default_data["description"], height=200)
     skills = st.text_input("Skills", default_data["skills"])
     education = st.text_input("Education", default_data["education"])
     experience = st.text_input("Experience", default_data["experience"])
