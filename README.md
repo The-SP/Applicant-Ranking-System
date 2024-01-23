@@ -71,23 +71,30 @@ To use the Streamlit App, follow these steps:
 Each section (education, experience, skills, projects, description) is evaluated against the job description. Scores are assigned based on the extent of match between the resume and job requirements.
 
 1. **Description**  
-   The TF-IDF vectorizer and cosine similarity techniques are used to compare the textual content of the resume with that of the job description.
+We use pre-trained sentence transformer models to calculate the similarity between the resume description and the job description.
+By using sentence embeddings, our description comparison captures contextual information and semantic relationships.
 
 2. **Education**
 
 - Identify degree and major in education  
   Our system uses Spacy library to extract information (degree and major) from Education section. We prepared a dictionary that has common education degrees and majors related to computer engineering field. We fed that dictionary to the Spacy rule-based EntityRuler in order to detect and recognize entities in our job description.
 - Evaluation
-  1. Degree Evaluation:
-  - Different degree levels are assigned corresponding values (e.g., Bachelor=1, Master=2, PhD=3).
-  - A lower degree score indicates a closer match, with a score of 0 representing a perfect match.
-  - The score is then normalized to a range between 0 and 1, and adjusted to ensure that a higher score signifies better similarity.
-  2. Field of Study Evaluation:
-  - This metric quantifies the textual similarity between the applicant's field of study and the required field of study specified in the job description.
-  3. Combining Degree and Field Scores:  
-     The degree score is weighted by 0.7, and the field score is weighted by 0.3 to calculate total education score.
 
-3. **Experience**
+    1. Degree Evaluation:
+
+    - Different degree levels are assigned corresponding values (e.g., Bachelor=1, Master=2, PhD=3).
+    - If the highest degree in a resume is greater than or equal to the required minimum job degree, the score is 1,
+    - Otherwise, it is calculated using a formula that considers the difference between the degrees.
+
+    2. Field of Study Evaluation:
+
+    - The field of study (major) is divided into three parts. Each part of the major represents a level of specificity in the field of study. This allows for partial matches to be considered in a structured manner.
+    - A similarity score is assigned based on partial matches in the 1st, 2nd, and 3rd parts of the major.
+
+    3. Combining Degree and Field Scores:  
+       The degree score is weighted by 0.7, and the field score is weighted by 0.3 to calculate total education score.
+
+4. **Experience**
 
 - Extracts the 'X years' part from the target job experience.
 - Calculates similarity scores for each applicant's experience, taking the ratio of their 'X years' to the target job's 'X years'.
