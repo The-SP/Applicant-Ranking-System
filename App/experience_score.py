@@ -144,8 +144,10 @@ def get_experience_score(df_resume, target_job):
 
     nlp = create_nlp_for_experience()
 
-    # First, replace En-dash '–' with Hyphen '-' before NER. e.g. Jun 2018 – Present
-    df_resume["EXPERIENCE"] = df_resume["EXPERIENCE"].str.replace("–", "-")
+    # First, replace En-dash '–' and Em-dash '—' with Hyphen '-' before NER. e.g. Jun 2018 – Present
+    df_resume["EXPERIENCE"] = (
+        df_resume["EXPERIENCE"].str.replace("–", "-").str.replace("—", "-")
+    )
 
     experience_date_vectors = []
     experience_years = []
@@ -170,5 +172,5 @@ def get_experience_score(df_resume, target_job):
         applicant_scores.append(similarity_score)
 
     df_resume["experience_dates"] = experience_date_vectors
-    df_resume['experience_years'] = experience_years
+    df_resume["experience_years"] = experience_years
     df_resume["experience_score"] = applicant_scores
