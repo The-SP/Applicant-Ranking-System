@@ -13,8 +13,10 @@ def skill_present(skill, description):
 
 
 def vectorize_skills(df_resume_texts, target_job):
+    # Remove '.js' extension from the skill to handle cases like 'react.js' and 'react'
+    target_job_skills_text = target_job['skills'].replace('.js', '')
     # The 'skills' column has string values. Each string has skills sepearated by comma. So convert them to array of skills.
-    target_job_skills = target_job["skills"].lower().split(", ")
+    target_job_skills = target_job_skills_text.lower().split(", ")
     # Initialize the MultiLabelBinarizer
     mlb = MultiLabelBinarizer(classes=target_job_skills)
 
