@@ -31,6 +31,7 @@
 
 {"label": "MAJOR|CS|CS|computer-science", "pattern": [{"LOWER": "computer"}, {"LOWER": "science"}]}
 {"label": "MAJOR|CS|CS|computer-engineering", "pattern": [{"LOWER": "computer"}, {"LOWER": "engineering"}]}
+{"label": "MAJOR|CS|CS|electronics-engineering", "pattern": [{"LOWER": "electronics"}, {"LOWER": "engineering"}]}
 {"label": "MAJOR|CS|CS|information-technology", "pattern": [{"LOWER": "information"}, {"LOWER": "technology"}]}
 {"label": "MAJOR|CS|CS|information-technology", "pattern": [{"LOWER": "it"}]}
 {"label": "MAJOR|CS|CS|software-engineering", "pattern": [{"LOWER": "software"}, {"LOWER": "engineering"}]}

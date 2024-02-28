@@ -34,7 +34,7 @@ def preprocess_job(target_job):
 
 def get_description_score(df_resume, target_job):
     # Load a pre-trained sentence transformer model
-    MODEL_NAME = "bert-base-nli-mean-tokens"
+    MODEL_NAME = "all-MiniLM-L12-v2"
     model = SentenceTransformer(MODEL_NAME)
 
     # Combine text from all columns to get overall resume text
