@@ -9,6 +9,10 @@ The Applicant Ranking System is a tool designed to assist in the evaluation and 
 In today's competitive job market, organizations receive a large volume of resumes for every open position. Manual resume screening is a time-consuming and resource-intensive task for recruiters and HR professionals.
 This application aims to automate the screening process, effectively filtering out irrelevant resumes and allowing recruiters to focus their time and efforts on the most qualified candidates.
 
+## Demo
+https://github.com/The-SP/Applicant-Ranking-System/assets/67119046/e39337ac-8941-4365-a892-6cabbad91971
+
+
 ## Getting Started
 
 1. **Download and Use the App**:
