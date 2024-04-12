@@ -10,43 +10,11 @@ def visualize_total_scores(df):
     plt.figure(figsize=(10, 6))
     ax = sns.barplot(x="Filename", y="total_score", data=df)
     for p in ax.patches:
-        ax.annotate(f"{int(p.get_height()*100)}", (p.get_x()*1.01, p.get_height() * 1.01))
-    plt.xticks(rotation=90)
+        ax.annotate(
+            f"{int(p.get_height()*100)}", (p.get_x() * 1.01, p.get_height() * 1.01)
+        )
+    plt.xticks(rotation=45)
     plt.title("Total Scores by Resume")
-    st.pyplot(plt)
-
-
-def visualize_grouped_bar_chart(df):
-    # Grouped bar chart for section scores
-    plt.figure(figsize=(12, 6))
-
-    # Set 'Filename' as the index (for plt legend)
-    df = df.set_index("Filename")
-
-    # Select relevant columns for the bar chart
-    scores = df.head(5)[
-        [
-            "description_score",
-            "skills_score",
-            "projects_score",
-            "education_score",
-            "experience_score",
-            "total_score",
-        ]
-    ]
-
-    # Transpose the DataFrame for easier plotting
-    scores = scores.transpose()
-
-    # Plot the grouped bar chart
-    scores.plot(kind="bar")
-    plt.xlabel("Sections")
-    plt.ylabel("Score")
-    plt.title("Scores for Each Section for Top 5 resumes")
-    plt.legend(title="Resumes", loc="best", fontsize=7)
-    plt.tight_layout()
-
-    # Display the plot using st.pyplot()
     st.pyplot(plt)
 
 
@@ -72,8 +40,25 @@ def visualize_heatmap(df):
 
     # Set 'Filename' as the index
     df = df.set_index("Filename")
+
+    # Create a dictionary to map the column names
+    column_name_mapping = {
+        "description_score": "Description",
+        "skills_score": "Skills",
+        "projects_score": "Projects",
+        "education_score": "Education",
+        "experience_score": "Experience",
+        "total_score": "Total",
+    }
+
     plt.figure(figsize=(10, 6))
-    sns.heatmap(df[columns_to_visualize].head(20), cmap="YlGnBu", annot=True, fmt=".2f")
+    sns.heatmap(
+        df[columns_to_visualize].head(20),
+        cmap="YlGnBu",
+        annot=True,
+        fmt=".2f",
+        xticklabels=[column_name_mapping[col] for col in columns_to_visualize],
+    )
     plt.title("Applicant Rankings Score - Heatmap")
     plt.tight_layout()
     st.pyplot(plt)

@@ -4,7 +4,6 @@ from resume_parse import parse_resume_files
 from applicant_ranking import ranking_algorithm
 from visualization import (
     visualize_total_scores,
-    visualize_grouped_bar_chart,
     visualize_feature_weights,
     visualize_heatmap,
 )
@@ -19,9 +18,9 @@ def main():
     default_data = {
         "title": "Full Stack Web Developer",
         "description": "We are seeking a talented and motivated Full Stack Developer to join our dynamic team at XYZ Tech Solutions. As a key member of our development team, you will be responsible for designing, developing, and maintaining scalable web applications, collaborating closely with cross-functional teams to meet project requirements. The ideal candidate will have a strong foundation in both front-end and back-end technologies, proficiency in frameworks like React or Angular, and experience with database management systems. You should be adept at writing clean, efficient code, conducting thorough testing, and staying updated on industry trends. If you are a proactive problem solver with excellent communication skills and a passion for innovation, we invite you to apply and contribute to the exciting projects shaping the future of our company in the technology sector. Join us in a collaborative and inclusive work environment where your skills will thrive, and together, we'll make a meaningful impact. Apply by [closing date] with your resume, cover letter, and any relevant portfolio to careers@xyztechsolutions.com. XYZ Tech Solutions is proud to be an equal opportunity employer, offering competitive benefits and a platform for professional growth.",
-        "skills": "Python, Django, React, Javascript, HTML, CSS",
-        "education": "Bachelor in Computer Science",
-        "experience": "4 years",
+        "skills": "React.js, Node.js, HTML, CSS, JavaScript, Python, SQL, PostgreSQL",
+        "education": "Bachelor in Computer Engineering",
+        "experience": "3 years",
     }
 
     # Job Description Inputs
@@ -178,7 +177,6 @@ def main():
                 )
 
                 visualize_total_scores(df_resume_rankings)
-                visualize_grouped_bar_chart(df_resume_rankings)
                 visualize_heatmap(df_resume_rankings)
 
 

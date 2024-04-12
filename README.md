@@ -23,9 +23,6 @@ This application aims to automate the screening process, effectively filtering o
 
    - For advanced users, you can experiment with the resume parsing and scoring models using Jupyter notebooks: `Resume Parser/resume_parser.ipynb` and `Resume Parser/resume_score.ipynb`.
 
-3. **Project Directory Overview**
-
-   - For a detailed overview of the project's directory structure, please refer to [folders_overview.md](folders_overview.md).
 
 ## Usage
 
